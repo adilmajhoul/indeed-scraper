@@ -141,13 +141,24 @@ def get_text(html,selector,index=0):
 # print(titles)
 
 
-def build_url(base_url, path, query_dict):
 def build_url(base_url,path='',query_dict={}):
-  mydict = {'search_query': 'as7ab lkahf'}
-  return f"{base_url}{path}{urlencode(query_dict)}"
+  url = f"{base_url}/{path}{urlencode(query_dict)}"
+  return url
 
 # https://www.youtube.com/results?/search_query=as7ab+lkahf
 # https://www.youtube.com/results?search_query=as7ab+lkahf
 
 
-print(build_url('https://www.youtube.com/results','search_query',{'search_query':'as7ab lkahf'}))
+# url = 'https://www.indeed.co.in/jobs?q=' + skill + \
+  
+#   '&l=' + place + '&start=' + str(page * 10)
+            
+
+page = 1
+url = build_url('https://ma.indeed.com','jobs?',{'q': 'développeur','l':'Rabat','sort':'date','start':str(page * 10) if page > 1 else ''})
+print('url: ', url)
+
+# https://ma.indeed.com/jobs?q=d%C3%A9veloppeur&l=Rabat
+# https://ma.indeed.com/jobs?q=d%C3%A9veloppeur&l=Rabat
+# res = requests.get(url)
+# print(res.text)

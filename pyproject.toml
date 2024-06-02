@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "indeed-apply-bot"
+name = "indeed-scraper"
 version = "0.1.0"
 description = ""
 authors = ["Adil_Majhoul <itsadilhadid@gmail.com>"]
