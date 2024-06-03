@@ -1,0 +1,1 @@
+get_text(node.html,"h2.jobTitle > a")
