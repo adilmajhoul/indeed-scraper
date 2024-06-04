@@ -1,5 +1,62 @@
 [
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "urlencode",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urlencode",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
         "label": "request",
         "importPath": "urllib",
         "description": "urllib",
@@ -82,30 +139,6 @@
         "documentation": {}
     },
     {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
-        "isExtraImport": true,
-        "detail": "selectolax.parser",
-        "documentation": {}
-    },
-    {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
-        "isExtraImport": true,
-        "detail": "selectolax.parser",
-        "documentation": {}
-    },
-    {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
-        "isExtraImport": true,
-        "detail": "selectolax.parser",
-        "documentation": {}
-    },
-    {
         "label": "matplotlib.pyplot",
         "kind": 6,
         "isExtraImport": true,
@@ -115,19 +148,35 @@
         "documentation": {}
     },
     {
-        "label": "urlencode",
-        "importPath": "urllib.parse",
-        "description": "urllib.parse",
-        "isExtraImport": true,
-        "detail": "urllib.parse",
-        "documentation": {}
-    },
-    {
         "label": "html_content",
         "importPath": "myhtml",
         "description": "myhtml",
         "isExtraImport": true,
         "detail": "myhtml",
+        "documentation": {}
+    },
+    {
+        "label": "jrint",
+        "importPath": "lib",
+        "description": "lib",
+        "isExtraImport": true,
+        "detail": "lib",
+        "documentation": {}
+    },
+    {
+        "label": "get_text",
+        "importPath": "lib",
+        "description": "lib",
+        "isExtraImport": true,
+        "detail": "lib",
+        "documentation": {}
+    },
+    {
+        "label": "build_url",
+        "importPath": "lib",
+        "description": "lib",
+        "isExtraImport": true,
+        "detail": "lib",
         "documentation": {}
     },
     {
@@ -149,20 +198,55 @@
         "documentation": {}
     },
     {
+        "label": "dateparser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dateparser",
+        "description": "dateparser",
+        "detail": "dateparser",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "jrint",
+        "kind": 2,
+        "importPath": "src.lib",
+        "description": "src.lib",
+        "peekOfCode": "def jrint(*args):\n    \"\"\"print any data as json (for formated output)\"\"\"\n    for item in args:\n        print(json.dumps(item, indent=8))\ndef get_text(html, selector, index=0):\n    parser = HTMLParser(html)\n    return parser.css(selector)[index].text().strip()\ndef build_url(base_url, path=\"\", query_dict={}):\n    url = f\"{base_url}/{path}{urlencode(query_dict)}\"\n    return url",
+        "detail": "src.lib",
+        "documentation": {}
+    },
+    {
         "label": "get_text",
         "kind": 2,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "def get_text(html,selector,index=0):\n  parser = HTMLParser(html)\n  return parser.css(selector)[index].text().strip()\n# def build_url(base_url, path, query_dict):\n#     # Returns a list in the structure of urlparse.ParseResult\n#     url_parts = list(urllib.parse.urlparse(base_url))\n#     url_parts[2] = path\n#     url_parts[4] = urllib.parse.urlencode(args_dict)\n#     return urllib.parse.urlunparse(url_parts)\n# titles=[]",
-        "detail": "src.main",
+        "importPath": "src.lib",
+        "description": "src.lib",
+        "peekOfCode": "def get_text(html, selector, index=0):\n    parser = HTMLParser(html)\n    return parser.css(selector)[index].text().strip()\ndef build_url(base_url, path=\"\", query_dict={}):\n    url = f\"{base_url}/{path}{urlencode(query_dict)}\"\n    return url",
+        "detail": "src.lib",
         "documentation": {}
     },
     {
         "label": "build_url",
         "kind": 2,
+        "importPath": "src.lib",
+        "description": "src.lib",
+        "peekOfCode": "def build_url(base_url, path=\"\", query_dict={}):\n    url = f\"{base_url}/{path}{urlencode(query_dict)}\"\n    return url",
+        "detail": "src.lib",
+        "documentation": {}
+    },
+    {
+        "label": "header",
+        "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "def build_url(base_url,path='',query_dict={}):\n  url = f\"{base_url}/{path}{urlencode(query_dict)}\"\n  return url\n# https://www.youtube.com/results?/search_query=as7ab+lkahf\n# https://www.youtube.com/results?search_query=as7ab+lkahf\n# url = 'https://www.indeed.co.in/jobs?q=' + skill + \\\n#   '&l=' + place + '&start=' + str(page * 10)\n# search_query = input('Enter Your Search Query: ').strip()\n# location = input('Enter Your location: ').strip()\n# pages = int(input('Enter Pages To Scrape: ').strip())",
+        "peekOfCode": "header = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\n# parser = HTMLParser(html_content)\ntitles = []\n# pages = 3\n# for page in range(pages):\n#     print(\"page: \", page)\n#     url = f\"https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}\"\n#     print(\"url: \", url)",
         "detail": "src.main",
         "documentation": {}
     },
@@ -171,16 +255,52 @@
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "titles = []\npages = 3\nfor page in range(pages):\n    print('page: ', page)\n    url = f'https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}'\n    print('url: ', url)\n    html = requests.get(url, headers=header).text\n    parser = HTMLParser(html)\n    for node in parser.css('ul.css-zu9cdh > li'):\n        if len(node.css(\"h2.jobTitle > a\")) >= 1:",
+        "peekOfCode": "titles = []\n# pages = 3\n# for page in range(pages):\n#     print(\"page: \", page)\n#     url = f\"https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}\"\n#     print(\"url: \", url)\n#     html = requests.get(url, headers=header).text\n#     parser = HTMLParser(html)\n#     for node in parser.css(\"ul.css-zu9cdh > li\"):\n#         if len(node.css(\"h2.jobTitle > a\")) >= 1:",
         "detail": "src.main",
         "documentation": {}
     },
     {
-        "label": "pages",
+        "label": "nav_html",
         "kind": 5,
         "importPath": "src.main",
         "description": "src.main",
-        "peekOfCode": "pages = 3\nfor page in range(pages):\n    print('page: ', page)\n    url = f'https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}'\n    print('url: ', url)\n    html = requests.get(url, headers=header).text\n    parser = HTMLParser(html)\n    for node in parser.css('ul.css-zu9cdh > li'):\n        if len(node.css(\"h2.jobTitle > a\")) >= 1:\n            titles.append(get_text(node.html,\"h2.jobTitle > a\")) ",
+        "peekOfCode": "nav_html = \"\"\"\n<nav role=\"navigation\" aria-label=\"pagination\" class=\"css-98e656 eu4oa1w0\"><ul class=\"css-1g90gv6 eu4oa1w0\"><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-prev\" aria-label=\"Previous Page\" href=\"/jobs?q=developer&amp;l=rabat\" class=\"css-akkh0a e8ju0x50\"><svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" role=\"img\" fill=\"currentColor\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"css-1xqhio eac13zx0\"><path d=\"M14.112 18.002c.2.2.52.204.716.008l.707-.707a.507.507 0 00-.009-.716L10.94 12l4.587-4.587c.2-.2.205-.521.01-.716l-.708-.708a.507.507 0 00-.716.01l-5.648 5.647c-.1.1-.148.234-.143.367.002.124.05.247.143.34l.001.001a.758.758 0 00.008.008l5.64 5.64z\"></path></svg></a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-1\" aria-label=\"1\" href=\"/jobs?q=developer&amp;l=rabat\" class=\"css-163rxa6 e8ju0x50\">1</a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-current\" aria-current=\"page\" href=\"#\" class=\"css-1ek5kzj e71d0lh0\">2</a></li></ul></nav>\n\"\"\"\nurl = \"https://ma.indeed.com/jobs?q=developer&l=rabat&start=30\"\nhtml = requests.get(url, headers=header).text\n# soup = BeautifulSoup(html, \"lxml\")\nsoup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "url = \"https://ma.indeed.com/jobs?q=developer&l=rabat&start=30\"\nhtml = requests.get(url, headers=header).text\n# soup = BeautifulSoup(html, \"lxml\")\nsoup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "html = requests.get(url, headers=header).text\n# soup = BeautifulSoup(html, \"lxml\")\nsoup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(\n#     \"nav\",",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "soup",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "soup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(\n#     \"nav\",\n#     role=\"navigation\",\n# )",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "parser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(\n#     \"nav\",\n#     role=\"navigation\",\n# )\n# Extract and print the text inside each <a> tag\n# for a in a_tags:",
         "detail": "src.main",
         "documentation": {}
     },
@@ -398,6 +518,33 @@
         "description": "src.scrape_indeed",
         "peekOfCode": "file_path = main_dir + file_name\n# Writing to the CSV File\nwith open(file_path, mode='w') as file:\n    writer = csv.writer(file, delimiter=',', lineterminator='\\n')\n    # Adding the Column Names to the CSV File\n    writer.writerow(\n        ['JOB_NAME', 'COMPANY', 'LOCATION', 'POSTED', 'APPLY_LINK'])\n    # Requesting and getting the webpage using requests\n    print(f'\\nScraping in progress...\\n')\n    for page in range(no_of_pages):",
         "detail": "src.scrape_indeed",
+        "documentation": {}
+    },
+    {
+        "label": "time_strings",
+        "kind": 5,
+        "importPath": "src.timeparse",
+        "description": "src.timeparse",
+        "peekOfCode": "time_strings = [\n    \"just now\",\n    \"12 seconds ago\",\n    \"3 minutes ago\",\n    \"2 hours ago\",\n    \"24 days ago\",\n    \"6 months ago\",\n    \"2 years ago\",\n    \"in 12 seconds\",\n    \"in 3 minutes\",",
+        "detail": "src.timeparse",
+        "documentation": {}
+    },
+    {
+        "label": "current_time",
+        "kind": 5,
+        "importPath": "src.timeparse",
+        "description": "src.timeparse",
+        "peekOfCode": "current_time = datetime.now()\n# Parse the relative time strings\nparsed_times = [dateparser.parse(time_str, settings={'RELATIVE_BASE': current_time}) for time_str in time_strings]\n# Display the results\nfor original, parsed in zip(time_strings, parsed_times):\n    print(f\"{original} -> {parsed}\")",
+        "detail": "src.timeparse",
+        "documentation": {}
+    },
+    {
+        "label": "parsed_times",
+        "kind": 5,
+        "importPath": "src.timeparse",
+        "description": "src.timeparse",
+        "peekOfCode": "parsed_times = [dateparser.parse(time_str, settings={'RELATIVE_BASE': current_time}) for time_str in time_strings]\n# Display the results\nfor original, parsed in zip(time_strings, parsed_times):\n    print(f\"{original} -> {parsed}\")",
+        "detail": "src.timeparse",
         "documentation": {}
     }
 ]

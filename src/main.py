@@ -1,4 +1,3 @@
-
 from urllib import request
 import requests
 import time
@@ -8,115 +7,72 @@ from selectolax.parser import HTMLParser
 import matplotlib.pyplot as plt
 from urllib.parse import urlencode
 from myhtml import html_content
+from lib import jrint, get_text, build_url
 
-# soup = BeautifulSoup(html_content,'lxml')
-# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]
-
-
-
-def get_text(html,selector,index=0):
-  parser = HTMLParser(html)
-  return parser.css(selector)[index].text().strip()
-
-# def build_url(base_url, path, query_dict):
-#     # Returns a list in the structure of urlparse.ParseResult
-#     url_parts = list(urllib.parse.urlparse(base_url))
-#     url_parts[2] = path
-#     url_parts[4] = urllib.parse.urlencode(args_dict)
-#     return urllib.parse.urlunparse(url_parts)
-
-# titles=[]
-# for node in parser.css('a'):
-  # titles.append(get_text(node.html,"h4")) 
-# 
-# print(titles)
-
-
-
-
-def build_url(base_url,path='',query_dict={}):
-  url = f"{base_url}/{path}{urlencode(query_dict)}"
-  return url
-
-# https://www.youtube.com/results?/search_query=as7ab+lkahf
-# https://www.youtube.com/results?search_query=as7ab+lkahf
-
-
-# url = 'https://www.indeed.co.in/jobs?q=' + skill + \
-  
-#   '&l=' + place + '&start=' + str(page * 10)
-            
 
 # search_query = input('Enter Your Search Query: ').strip()
 # location = input('Enter Your location: ').strip()
 # pages = int(input('Enter Pages To Scrape: ').strip())
 
 
-# url = build_url('https://ma.indeed.com','jobs?',{'q': search_query,'l':location,'sort':'date','start':str(pages * 10) - 10 if pages > 1 else ''})
-# pages = 1
-# url = build_url('https://ma.indeed.com','jobs?',{'q': 'backend developer','l':'rabat','sort':'date','start':str(pages * 10) - 10 if pages > 1 else ''})
-# print('url: ', url)
-
-
-# headers = {
-    # "User-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"}
-
-
-
-header={"User-Agent": "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"}
-
-# r = requests.get('http://httpbin.org/headers', headers=header)
-# headers = r.json()['headers']
-# 
-# url = 'https://ma.indeed.com/jobs?q=backend%20developer&l=rabat&from=searchOnHP'
-# response = requests.get(url, headers=header)
-# html = response.text
-# print('html: ', html)
-
-# res= requests.get(url, headers=headers)
-# html_content = res.text
-# print('html_content: ', html_content)
+header = {
+    "User-Agent": "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+}
 
 
 # parser = HTMLParser(html_content)
 titles = []
 
-pages = 3
-for page in range(pages):
-    print('page: ', page)
-    
-    
-    url = f'https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}'
-    print('url: ', url)
-    html = requests.get(url, headers=header).text
-    parser = HTMLParser(html)
+# pages = 3
+# for page in range(pages):
+#     print("page: ", page)
 
-    for node in parser.css('ul.css-zu9cdh > li'):
-        if len(node.css("h2.jobTitle > a")) >= 1:
-            titles.append(get_text(node.html,"h2.jobTitle > a")) 
-        
+#     url = f"https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}"
+#     print("url: ", url)
+#     html = requests.get(url, headers=header).text
+#     parser = HTMLParser(html)
 
-    
-print('titles: ', titles)
-print('titles length: ', len(titles))
-# print('nodes: ', parser.css('ul.css-zu9cdh > li'))
-
-
-  
-# nodes = parser.css("h2.jobTitle > a")
-# print('nodes: ', nodes)
-
-
-
-# job = {
-#   "tite":'',
-#   "company":'',
-#   "location":'',
-#   'date':''
+#     for node in parser.css("ul.css-zu9cdh > li"):
+#         if len(node.css("h2.jobTitle > a")) >= 1:
+#             job = {
+#                 "title": get_text(node.html, "h2.jobTitle > a"),
+#                 "company": get_text(node.html, "span.companyName"),
+#                 "location": get_text(node.html, "div.companyLocation"),
+#   "posted": get_text(node.html, "span.date")
 #   }
+#             titles.append(job)
+
+# if len(parser.css('a[aria-label="Next Page"]')) >= 1 is not None:
+#     print("no more pages to scrap.")
+#     break
+
+jrint("titles: ", titles)
+
+# ----------------------
+
+nav_html = """
+<nav role="navigation" aria-label="pagination" class="css-98e656 eu4oa1w0"><ul class="css-1g90gv6 eu4oa1w0"><li class="css-227srf eu4oa1w0"><a data-testid="pagination-page-prev" aria-label="Previous Page" href="/jobs?q=developer&amp;l=rabat" class="css-akkh0a e8ju0x50"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="css-1xqhio eac13zx0"><path d="M14.112 18.002c.2.2.52.204.716.008l.707-.707a.507.507 0 00-.009-.716L10.94 12l4.587-4.587c.2-.2.205-.521.01-.716l-.708-.708a.507.507 0 00-.716.01l-5.648 5.647c-.1.1-.148.234-.143.367.002.124.05.247.143.34l.001.001a.758.758 0 00.008.008l5.64 5.64z"></path></svg></a></li><li class="css-227srf eu4oa1w0"><a data-testid="pagination-page-1" aria-label="1" href="/jobs?q=developer&amp;l=rabat" class="css-163rxa6 e8ju0x50">1</a></li><li class="css-227srf eu4oa1w0"><a data-testid="pagination-page-current" aria-current="page" href="#" class="css-1ek5kzj e71d0lh0">2</a></li></ul></nav>
+"""
+url = "https://ma.indeed.com/jobs?q=developer&l=rabat&start=30"
+html = requests.get(url, headers=header).text
+
+# soup = BeautifulSoup(html, "lxml")
+soup = BeautifulSoup(nav_html, "html.parser")
+
+# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]
+
+parser = HTMLParser(html)
+
+# print("soup:", soup.select(".yosegi-InlineWhatWhere-primaryButton"))
+print("next", parser.select('a[data-testid="pagination-page-current"]').text().strip())
 
 
-# for page in range(10):
-#   url = build_url('https://ma.indeed.com','jobs?',{'q': 'développeur','l':'Rabat','sort':'date','start':str(page * 10) if page > 1 else ''})
-#   print('url: ', url)
+# Find all <a> tags
+# a_tags = soup.find_all(
+#     "nav",
+#     role="navigation",
+# )
 
+# Extract and print the text inside each <a> tag
+# for a in a_tags:
+# print(a.get_text())

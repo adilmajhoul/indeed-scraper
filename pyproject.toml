@@ -13,6 +13,7 @@ lxml = "^5.2.2"
 bs4 = "^0.0.2"
 selectolax = "^0.3.21"
 matplotlib = "^3.9.0"
+dateparser = "^1.2.0"
 
 
 [build-system]
