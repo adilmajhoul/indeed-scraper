@@ -41,11 +41,11 @@
         "documentation": {}
     },
     {
-        "label": "urlencode",
-        "importPath": "urllib.parse",
-        "description": "urllib.parse",
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
         "isExtraImport": true,
-        "detail": "urllib.parse",
+        "detail": "selectolax.parser",
         "documentation": {}
     },
     {
@@ -57,11 +57,11 @@
         "documentation": {}
     },
     {
-        "label": "request",
-        "importPath": "urllib",
-        "description": "urllib",
+        "label": "urlencode",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
         "isExtraImport": true,
-        "detail": "urllib",
+        "detail": "urllib.parse",
         "documentation": {}
     },
     {
@@ -83,30 +83,6 @@
         "documentation": {}
     },
     {
-        "label": "html",
-        "importPath": "lxml",
-        "description": "lxml",
-        "isExtraImport": true,
-        "detail": "lxml",
-        "documentation": {}
-    },
-    {
-        "label": "html",
-        "importPath": "lxml",
-        "description": "lxml",
-        "isExtraImport": true,
-        "detail": "lxml",
-        "documentation": {}
-    },
-    {
-        "label": "html",
-        "importPath": "lxml",
-        "description": "lxml",
-        "isExtraImport": true,
-        "detail": "lxml",
-        "documentation": {}
-    },
-    {
         "label": "BeautifulSoup",
         "importPath": "bs4",
         "description": "bs4",
@@ -136,15 +112,6 @@
         "description": "bs4",
         "isExtraImport": true,
         "detail": "bs4",
-        "documentation": {}
-    },
-    {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -180,6 +147,38 @@
         "documentation": {}
     },
     {
+        "label": "HTMLSession",
+        "importPath": "requests_html",
+        "description": "requests_html",
+        "isExtraImport": true,
+        "detail": "requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLSession",
+        "importPath": "requests_html",
+        "description": "requests_html",
+        "isExtraImport": true,
+        "detail": "requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "Headers",
+        "importPath": "fake_headers",
+        "description": "fake_headers",
+        "isExtraImport": true,
+        "detail": "fake_headers",
+        "documentation": {}
+    },
+    {
+        "label": "Headers",
+        "importPath": "fake_headers",
+        "description": "fake_headers",
+        "isExtraImport": true,
+        "detail": "fake_headers",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -195,6 +194,23 @@
         "importPath": "csv",
         "description": "csv",
         "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "importPath": "lxml",
+        "description": "lxml",
+        "isExtraImport": true,
+        "detail": "lxml",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -217,334 +233,559 @@
     {
         "label": "jrint",
         "kind": 2,
-        "importPath": "src.lib",
-        "description": "src.lib",
-        "peekOfCode": "def jrint(*args):\n    \"\"\"print any data as json (for formated output)\"\"\"\n    for item in args:\n        print(json.dumps(item, indent=8))\ndef get_text(html, selector, index=0):\n    parser = HTMLParser(html)\n    return parser.css(selector)[index].text().strip()\ndef build_url(base_url, path=\"\", query_dict={}):\n    url = f\"{base_url}/{path}{urlencode(query_dict)}\"\n    return url",
-        "detail": "src.lib",
+        "importPath": "lib",
+        "description": "lib",
+        "peekOfCode": "def jrint(*args):\n    \"\"\"print any data as json (for formated output)\"\"\"\n    for item in args:\n        print(json.dumps(item, indent=8))\ndef get_text(html, selector, index=0):\n    parser = HTMLParser(html)\n    return parser.css(selector)[index].text().strip()\ndef build_url(base_url, query_dict={}):\n    url = f\"{base_url}/{urlencode(query_dict)}\"\n    return url",
+        "detail": "lib",
         "documentation": {}
     },
     {
         "label": "get_text",
         "kind": 2,
-        "importPath": "src.lib",
-        "description": "src.lib",
-        "peekOfCode": "def get_text(html, selector, index=0):\n    parser = HTMLParser(html)\n    return parser.css(selector)[index].text().strip()\ndef build_url(base_url, path=\"\", query_dict={}):\n    url = f\"{base_url}/{path}{urlencode(query_dict)}\"\n    return url",
-        "detail": "src.lib",
+        "importPath": "lib",
+        "description": "lib",
+        "peekOfCode": "def get_text(html, selector, index=0):\n    parser = HTMLParser(html)\n    return parser.css(selector)[index].text().strip()\ndef build_url(base_url, query_dict={}):\n    url = f\"{base_url}/{urlencode(query_dict)}\"\n    return url",
+        "detail": "lib",
         "documentation": {}
     },
     {
         "label": "build_url",
         "kind": 2,
-        "importPath": "src.lib",
-        "description": "src.lib",
-        "peekOfCode": "def build_url(base_url, path=\"\", query_dict={}):\n    url = f\"{base_url}/{path}{urlencode(query_dict)}\"\n    return url",
-        "detail": "src.lib",
+        "importPath": "lib",
+        "description": "lib",
+        "peekOfCode": "def build_url(base_url, query_dict={}):\n    url = f\"{base_url}/{urlencode(query_dict)}\"\n    return url",
+        "detail": "lib",
+        "documentation": {}
+    },
+    {
+        "label": "get_header",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\n# if len(parser.css('a[aria-label=\"Next Page\"]')) >= 1 is not None:\n#     print(\"no more pages to scrap.\")\n#     break\n# -----------------------------------",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "NEXT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "NEXT_PAGE_BUTTON_SELECTOR = 'a[aria-label=\"Next Page\"]'\nCURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_TITLE_SLECTOR = \"\"\nJOB_COMPANY_SLECTOR = \"\"\nJOB_LOCATION_SLECTOR = \"\"\nJOB_DATE_SLECTOR = \"\"\nSEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "CURRENT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "CURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_TITLE_SLECTOR = \"\"\nJOB_COMPANY_SLECTOR = \"\"\nJOB_LOCATION_SLECTOR = \"\"\nJOB_DATE_SLECTOR = \"\"\nSEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "PREVIOUS_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "PREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_TITLE_SLECTOR = \"\"\nJOB_COMPANY_SLECTOR = \"\"\nJOB_LOCATION_SLECTOR = \"\"\nJOB_DATE_SLECTOR = \"\"\nSEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\ndef get_header():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_TITLE_SLECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "JOB_TITLE_SLECTOR = \"\"\nJOB_COMPANY_SLECTOR = \"\"\nJOB_LOCATION_SLECTOR = \"\"\nJOB_DATE_SLECTOR = \"\"\nSEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\ndef get_header():\n    return Headers(",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_COMPANY_SLECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "JOB_COMPANY_SLECTOR = \"\"\nJOB_LOCATION_SLECTOR = \"\"\nJOB_DATE_SLECTOR = \"\"\nSEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_LOCATION_SLECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "JOB_LOCATION_SLECTOR = \"\"\nJOB_DATE_SLECTOR = \"\"\nSEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_DATE_SLECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "JOB_DATE_SLECTOR = \"\"\nSEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "SEARCH_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "SEARCH_BUTTON_SELECTOR = \"#jobsearch > div > div.css-169igj0.eu4oa1w0 > button\"\nheader = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()",
+        "detail": "main",
         "documentation": {}
     },
     {
         "label": "header",
         "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "header = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\n# parser = HTMLParser(html_content)\ntitles = []\n# pages = 3\n# for page in range(pages):\n#     print(\"page: \", page)\n#     url = f\"https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}\"\n#     print(\"url: \", url)",
-        "detail": "src.main",
-        "documentation": {}
-    },
-    {
-        "label": "titles",
-        "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "titles = []\n# pages = 3\n# for page in range(pages):\n#     print(\"page: \", page)\n#     url = f\"https://ma.indeed.com/jobs?q=developer&l=rabat&start={str(page * 10)}\"\n#     print(\"url: \", url)\n#     html = requests.get(url, headers=header).text\n#     parser = HTMLParser(html)\n#     for node in parser.css(\"ul.css-zu9cdh > li\"):\n#         if len(node.css(\"h2.jobTitle > a\")) >= 1:",
-        "detail": "src.main",
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "header = {\n    \"User-Agent\": \"Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\"\n}\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\n# if len(parser.css('a[aria-label=\"Next Page\"]')) >= 1 is not None:",
+        "detail": "main",
         "documentation": {}
     },
     {
         "label": "nav_html",
         "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "nav_html = \"\"\"\n<nav role=\"navigation\" aria-label=\"pagination\" class=\"css-98e656 eu4oa1w0\"><ul class=\"css-1g90gv6 eu4oa1w0\"><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-prev\" aria-label=\"Previous Page\" href=\"/jobs?q=developer&amp;l=rabat\" class=\"css-akkh0a e8ju0x50\"><svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" role=\"img\" fill=\"currentColor\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"css-1xqhio eac13zx0\"><path d=\"M14.112 18.002c.2.2.52.204.716.008l.707-.707a.507.507 0 00-.009-.716L10.94 12l4.587-4.587c.2-.2.205-.521.01-.716l-.708-.708a.507.507 0 00-.716.01l-5.648 5.647c-.1.1-.148.234-.143.367.002.124.05.247.143.34l.001.001a.758.758 0 00.008.008l5.64 5.64z\"></path></svg></a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-1\" aria-label=\"1\" href=\"/jobs?q=developer&amp;l=rabat\" class=\"css-163rxa6 e8ju0x50\">1</a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-current\" aria-current=\"page\" href=\"#\" class=\"css-1ek5kzj e71d0lh0\">2</a></li></ul></nav>\n\"\"\"\nurl = \"https://ma.indeed.com/jobs?q=developer&l=rabat&start=30\"\nhtml = requests.get(url, headers=header).text\n# soup = BeautifulSoup(html, \"lxml\")\nsoup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))",
-        "detail": "src.main",
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "nav_html = \"\"\"\n<nav role=\"navigation\" aria-label=\"pagination\" class=\"css-98e656 eu4oa1w0\"><ul class=\"css-1g90gv6 eu4oa1w0\"><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-prev\" aria-label=\"Previous Page\" href=\"/jobs?q=developer&amp;l=rabat&amp;sort=date\" class=\"css-akkh0a e8ju0x50\"><svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" role=\"img\" fill=\"currentColor\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"css-1xqhio eac13zx0\"><path d=\"M14.112 18.002c.2.2.52.204.716.008l.707-.707a.507.507 0 00-.009-.716L10.94 12l4.587-4.587c.2-.2.205-.521.01-.716l-.708-.708a.507.507 0 00-.716.01l-5.648 5.647c-.1.1-.148.234-.143.367.002.124.05.247.143.34l.001.001a.758.758 0 00.008.008l5.64 5.64z\"></path></svg></a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-1\" aria-label=\"1\" href=\"/jobs?q=developer&amp;l=rabat&amp;sort=date\" class=\"css-163rxa6 e8ju0x50\">1</a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-current\" aria-current=\"page\" href=\"#\" class=\"css-1ek5kzj e71d0lh0\">2</a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-3\" aria-label=\"3\" href=\"/jobs?q=developer&amp;l=rabat&amp;sort=date&amp;start=20\" class=\"css-163rxa6 e8ju0x50\">3</a></li><li class=\"css-227srf eu4oa1w0\"><a data-testid=\"pagination-page-next\" aria-label=\"Next Page\" href=\"https://ma.indeed.com/jobs?q=developer&amp;l=rabat&amp;sort=date&amp;start=20&amp;pp=gQAeAAAAAAAAAAAAAAACKcq2cQANAQAAkxapnNtQQXmM5gAA\" class=\"css-akkh0a e8ju0x50\"><svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" role=\"img\" fill=\"currentColor\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" class=\"css-1xqhio eac13zx0\"><path d=\"M9.888 5.998a.506.506 0 00-.716-.008l-.707.707a.506.506 0 00.01.716L13.06 12l-4.587 4.587c-.2.2-.204.521-.009.716l.707.707a.507.507 0 00.717-.009l5.647-5.648c.1-.1.148-.233.144-.366a.492.492 0 00-.144-.34v-.001a.611.611 0 00-.009-.009L9.888 5.998z\"></path></svg></a></li></ul></nav>\n\"\"\"\n# url = \"https://ma.indeed.com/jobs?q=developer&l=rabat&sort=date\"\n# res = requests.get(url, headers=header)\n# print(\"res: \", res)\n# html = res.text\n# # print(html)\n# soup = BeautifulSoup(html, \"html.parser\")\n# parser = HTMLParser(html)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "titles",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "titles = []\npages = 3\nduplication = False\nfor page in range(pages):\n    print(\"page: \", page)\n    url = f\"https://ma.indeed.com/jobs?q=stage&l=rabat&sort=date&start={str(page * 10)}\"\n    print(\"url: \", url)\n    html = requests.get(url, headers=get_header()).text\n    parser = HTMLParser(html)\n    print(\"next button ->\", parser.css('a[aria-label=\"Next Page\"]'))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "pages",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "pages = 3\nduplication = False\nfor page in range(pages):\n    print(\"page: \", page)\n    url = f\"https://ma.indeed.com/jobs?q=stage&l=rabat&sort=date&start={str(page * 10)}\"\n    print(\"url: \", url)\n    html = requests.get(url, headers=get_header()).text\n    parser = HTMLParser(html)\n    print(\"next button ->\", parser.css('a[aria-label=\"Next Page\"]'))\n    for node in parser.css(\"ul.css-zu9cdh > li\"):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "duplication",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "duplication = False\nfor page in range(pages):\n    print(\"page: \", page)\n    url = f\"https://ma.indeed.com/jobs?q=stage&l=rabat&sort=date&start={str(page * 10)}\"\n    print(\"url: \", url)\n    html = requests.get(url, headers=get_header()).text\n    parser = HTMLParser(html)\n    print(\"next button ->\", parser.css('a[aria-label=\"Next Page\"]'))\n    for node in parser.css(\"ul.css-zu9cdh > li\"):\n        print(\"node: \", node)",
+        "detail": "main",
         "documentation": {}
     },
     {
         "label": "url",
         "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "url = \"https://ma.indeed.com/jobs?q=developer&l=rabat&start=30\"\nhtml = requests.get(url, headers=header).text\n# soup = BeautifulSoup(html, \"lxml\")\nsoup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(",
-        "detail": "src.main",
-        "documentation": {}
-    },
-    {
-        "label": "html",
-        "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "html = requests.get(url, headers=header).text\n# soup = BeautifulSoup(html, \"lxml\")\nsoup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(\n#     \"nav\",",
-        "detail": "src.main",
-        "documentation": {}
-    },
-    {
-        "label": "soup",
-        "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "soup = BeautifulSoup(nav_html, \"html.parser\")\n# texts = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nparser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(\n#     \"nav\",\n#     role=\"navigation\",\n# )",
-        "detail": "src.main",
-        "documentation": {}
-    },
-    {
-        "label": "parser",
-        "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "parser = HTMLParser(html)\n# print(\"soup:\", soup.select(\".yosegi-InlineWhatWhere-primaryButton\"))\nprint(\"next\", parser.select('a[data-testid=\"pagination-page-current\"]').text().strip())\n# Find all <a> tags\n# a_tags = soup.find_all(\n#     \"nav\",\n#     role=\"navigation\",\n# )\n# Extract and print the text inside each <a> tag\n# for a in a_tags:",
-        "detail": "src.main",
-        "documentation": {}
-    },
-    {
-        "label": "url",
-        "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "url = \"https://www.bezorgdekrant.nl/en/all-jobs\"\nresponse = requests.get(url)\ncontent = response.text\n# print('content: ')\n# print(content)\n# BeautifulSoup\nstart_time_bs = time.time()\nsoup = BeautifulSoup(content,'lxml')\njob_titles_bs = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nprint(\"🚀 length:\", len(job_titles_bs))",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "url = \"https://www.bezorgdekrant.nl/en/all-jobs\"\nresponse = requests.get(url)\ncontent = response.text\n# print('content: ')\n# print(content)\n# BeautifulSoup\nstart_time_bs = time.time()\nsoup = BeautifulSoup(content, \"lxml\")\njob_titles_bs = [\n    el.contents[2].get_text().strip() for el in soup.select(\"a.vacancy-card > h4\")",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "response",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "response = requests.get(url)\ncontent = response.text\n# print('content: ')\n# print(content)\n# BeautifulSoup\nstart_time_bs = time.time()\nsoup = BeautifulSoup(content,'lxml')\njob_titles_bs = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "response = requests.get(url)\ncontent = response.text\n# print('content: ')\n# print(content)\n# BeautifulSoup\nstart_time_bs = time.time()\nsoup = BeautifulSoup(content, \"lxml\")\njob_titles_bs = [\n    el.contents[2].get_text().strip() for el in soup.select(\"a.vacancy-card > h4\")\n]",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "content",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "content = response.text\n# print('content: ')\n# print(content)\n# BeautifulSoup\nstart_time_bs = time.time()\nsoup = BeautifulSoup(content,'lxml')\njob_titles_bs = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "content = response.text\n# print('content: ')\n# print(content)\n# BeautifulSoup\nstart_time_bs = time.time()\nsoup = BeautifulSoup(content, \"lxml\")\njob_titles_bs = [\n    el.contents[2].get_text().strip() for el in soup.select(\"a.vacancy-card > h4\")\n]\nprint(\"🚀 length:\", len(job_titles_bs))",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "start_time_bs",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "start_time_bs = time.time()\nsoup = BeautifulSoup(content,'lxml')\njob_titles_bs = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "start_time_bs = time.time()\nsoup = BeautifulSoup(content, \"lxml\")\njob_titles_bs = [\n    el.contents[2].get_text().strip() for el in soup.select(\"a.vacancy-card > h4\")\n]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "soup",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "soup = BeautifulSoup(content,'lxml')\njob_titles_bs = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [node.text().strip() for node in parser.css('#jobList > a:nth-child(1) > h4')]",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "soup = BeautifulSoup(content, \"lxml\")\njob_titles_bs = [\n    el.contents[2].get_text().strip() for el in soup.select(\"a.vacancy-card > h4\")\n]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "job_titles_bs",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "job_titles_bs = [el.contents[2].get_text().strip() for el in soup.select('a.vacancy-card > h4')]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [node.text().strip() for node in parser.css('#jobList > a:nth-child(1) > h4')]\njob_titles_selectolax = [el.text().strip() for el in parser.css('a.vacancy-card > h4:nth-of-type(2)')]",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "job_titles_bs = [\n    el.contents[2].get_text().strip() for el in soup.select(\"a.vacancy-card > h4\")\n]\nprint(\"🚀 length:\", len(job_titles_bs))\nend_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "end_time_bs",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "end_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [node.text().strip() for node in parser.css('#jobList > a:nth-child(1) > h4')]\njob_titles_selectolax = [el.text().strip() for el in parser.css('a.vacancy-card > h4:nth-of-type(2)')]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "end_time_bs = time.time()\nbs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [\n    node.text().strip() for node in parser.css(\"#jobList > a:nth-child(1) > h4\")\n]\njob_titles_selectolax = [",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "bs_time",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "bs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [node.text().strip() for node in parser.css('#jobList > a:nth-child(1) > h4')]\njob_titles_selectolax = [el.text().strip() for el in parser.css('a.vacancy-card > h4:nth-of-type(2)')]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "bs_time = end_time_bs - start_time_bs\n# ---------------------------\n# Selectolax\nstart_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [\n    node.text().strip() for node in parser.css(\"#jobList > a:nth-child(1) > h4\")\n]\njob_titles_selectolax = [\n    el.text().strip() for el in parser.css(\"a.vacancy-card > h4:nth-of-type(2)\")",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "start_time_selectolax",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "start_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [node.text().strip() for node in parser.css('#jobList > a:nth-child(1) > h4')]\njob_titles_selectolax = [el.text().strip() for el in parser.css('a.vacancy-card > h4:nth-of-type(2)')]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css('h4')\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "start_time_selectolax = time.time()\nparser = HTMLParser(content)\njob_titles_selectolax = [\n    node.text().strip() for node in parser.css(\"#jobList > a:nth-child(1) > h4\")\n]\njob_titles_selectolax = [\n    el.text().strip() for el in parser.css(\"a.vacancy-card > h4:nth-of-type(2)\")\n]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "parser",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "parser = HTMLParser(content)\njob_titles_selectolax = [node.text().strip() for node in parser.css('#jobList > a:nth-child(1) > h4')]\njob_titles_selectolax = [el.text().strip() for el in parser.css('a.vacancy-card > h4:nth-of-type(2)')]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css('h4')\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "parser = HTMLParser(content)\njob_titles_selectolax = [\n    node.text().strip() for node in parser.css(\"#jobList > a:nth-child(1) > h4\")\n]\njob_titles_selectolax = [\n    el.text().strip() for el in parser.css(\"a.vacancy-card > h4:nth-of-type(2)\")\n]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "job_titles_selectolax",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "job_titles_selectolax = [node.text().strip() for node in parser.css('#jobList > a:nth-child(1) > h4')]\njob_titles_selectolax = [el.text().strip() for el in parser.css('a.vacancy-card > h4:nth-of-type(2)')]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css('h4')\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "job_titles_selectolax = [\n    node.text().strip() for node in parser.css(\"#jobList > a:nth-child(1) > h4\")\n]\njob_titles_selectolax = [\n    el.text().strip() for el in parser.css(\"a.vacancy-card > h4:nth-of-type(2)\")\n]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css(\"h4\")",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "job_titles_selectolax",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "job_titles_selectolax = [el.text().strip() for el in parser.css('a.vacancy-card > h4:nth-of-type(2)')]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css('h4')\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "job_titles_selectolax = [\n    el.text().strip() for el in parser.css(\"a.vacancy-card > h4:nth-of-type(2)\")\n]\nprint(\"🚀 length:\", len(job_titles_selectolax))\nend_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css(\"h4\")\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "end_time_selectolax",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "end_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css('h4')\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n# \n# lxml",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "end_time_selectolax = time.time()\nselectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css(\"h4\")\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n#\n# lxml",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "selectolax_time",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "selectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css('h4')\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n# \n# lxml\n# start_time_lxml = time.time()",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "selectolax_time = end_time_selectolax - start_time_selectolax\nh4_elements = parser.css(\"h4\")\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n#\n# lxml\n# start_time_lxml = time.time()",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "h4_elements",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "h4_elements = parser.css('h4')\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n# \n# lxml\n# start_time_lxml = time.time()\n# tree = html.fromstring(content)",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "h4_elements = parser.css(\"h4\")\n# Extract text content from each <h4> element\nh4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n#\n# lxml\n# start_time_lxml = time.time()\n# tree = html.fromstring(content)",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "h4_texts",
         "kind": 5,
-        "importPath": "src.main_",
-        "description": "src.main_",
-        "peekOfCode": "h4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n# \n# lxml\n# start_time_lxml = time.time()\n# tree = html.fromstring(content)\n# job_titles_lxml = tree.xpath('//h3[@class=\"card-title\"]/text()')\n# end_time_lxml = time.time()",
-        "detail": "src.main_",
+        "importPath": "main_",
+        "description": "main_",
+        "peekOfCode": "h4_texts = [element.text().strip() for element in h4_elements]\n# Print the extracted texts\nfor text in h4_texts:\n    print(text)\n#\n# lxml\n# start_time_lxml = time.time()\n# tree = html.fromstring(content)\n# job_titles_lxml = tree.xpath('//h3[@class=\"card-title\"]/text()')\n# end_time_lxml = time.time()",
+        "detail": "main_",
         "documentation": {}
     },
     {
         "label": "html_content",
         "kind": 5,
-        "importPath": "src.myhtml",
-        "description": "src.myhtml",
+        "importPath": "myhtml",
+        "description": "myhtml",
         "peekOfCode": "html_content = '''\n<body class=\"is-desktop desktopAurora host-hydrated\"><div id=\"preLoadingIndicator\" style=\"height: 100vh\">\n            <div style=\"display: flex; flex-direction: column; align-items: center; position: absolute; top: 50%; left: 50%; transform: translateY(-50%); margin-top: -32px; margin-left: -75px\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"113\" height=\"31\" fill=\"none\" style=\"margin-bottom:2rem\"><path fill=\"#003A9B\" fill-rule=\"evenodd\" d=\"M111.92 5.689c-.398-.446-.93-.672-1.65-.672-.719 0-1.269.238-1.652.73-.382.475-.581 1.19-.581 2.126v6.785c-.885-.953-1.804-1.637-2.737-2.098a6.838 6.838 0 0 0-2.034-.595c-.443-.06-.902-.091-1.405-.091-2.339 0-4.234.804-5.687 2.412-1.437 1.608-2.156 3.84-2.156 6.708 0 1.356.184 2.62.549 3.78.37 1.159.885 2.172 1.59 3.033a7.462 7.462 0 0 0 2.507 1.995c.962.46 2.002.698 3.132.698a7.71 7.71 0 0 0 1.466-.132 5.83 5.83 0 0 0 .887-.211 7.637 7.637 0 0 0 2.003-1.01c.626-.447 1.254-1.028 1.88-1.726v.446c0 .848.214 1.488.626 1.95.43.446.964.683 1.605.683.657 0 1.192-.223 1.604-.653.411-.446.627-1.101.627-1.977V7.638c.007-.85-.192-1.505-.574-1.949Zm-4.754 18.715c-.412.862-.964 1.503-1.635 1.92a4.276 4.276 0 0 1-2.265.624h-.014a4.183 4.183 0 0 1-2.264-.653c-.689-.446-1.238-1.101-1.634-1.963-.395-.878-.594-1.934-.594-3.185 0-1.176.182-2.215.566-3.093.367-.893.901-1.577 1.575-2.052.689-.492 1.454-.715 2.322-.715h.046c.81 0 1.559.237 2.247.698.689.46 1.238 1.133 1.65 2.009.413.878.612 1.934.612 3.153 0 1.308-.199 2.396-.612 3.257Zm-14.844.195c-.29-.252-.688-.387-1.178-.387-.443 0-.78.106-1.024.298-.597.535-1.07.967-1.439 1.279-.365.298-.78.595-1.22.876a4.903 4.903 0 0 1-1.344.598 5.697 5.697 0 0 1-1.545.192c-.122 0-.244 0-.352-.015a4.244 4.244 0 0 1-1.955-.595c-.705-.4-1.255-.994-1.684-1.769-.412-.804-.626-1.725-.64-2.767h9.217c1.238 0 2.2-.18 2.874-.506.688-.358 1.024-1.102 1.024-2.247 0-1.25-.336-2.47-.993-3.674-.657-1.193-1.636-2.175-2.965-2.93-1.316-.759-2.89-1.131-4.74-1.131h-.136c-1.36.014-2.614.24-3.73.655a8.31 8.31 0 0 0-2.952 1.903 8.516 8.516 0 0 0-1.801 2.99 11.236 11.236 0 0 0-.629 3.778c0 2.888.842 5.148 2.523 6.828 1.588 1.594 3.79 2.427 6.587 2.516.153.014.319.014.489.014 1.314 0 2.49-.163 3.514-.504 1.024-.343 1.866-.76 2.54-1.265.669-.52 1.175-1.056 1.511-1.605.336-.55.506-1.042.506-1.445 0-.463-.151-.835-.458-1.087ZM81.317 16.19c.751-.79 1.713-1.176 2.89-1.176h.018c1.22 0 2.216.387 2.964 1.16.75.775 1.192 1.95 1.3 3.525h-8.546c.151-1.545.612-2.721 1.374-3.509Zm-9.066 8.019c-.458 0-.794.105-1.038.297-.58.536-1.07.968-1.437 1.28-.367.297-.765.595-1.209.876a4.971 4.971 0 0 1-1.36.597 5.612 5.612 0 0 1-1.544.192c-.12 0-.243 0-.35-.014a4.262 4.262 0 0 1-1.958-.595c-.686-.401-1.252-.994-1.664-1.77-.43-.803-.643-1.725-.66-2.766h9.232c1.223 0 2.185-.18 2.873-.507.672-.357 1.01-1.101 1.01-2.246 0-1.25-.321-2.47-.979-3.675-.657-1.192-1.65-2.174-2.964-2.93-1.317-.758-2.905-1.13-4.737-1.13h-.154c-1.36.014-2.597.24-3.73.655-1.163.446-2.141 1.087-2.935 1.903a8.31 8.31 0 0 0-1.818 2.99c-.415 1.162-.629 2.427-.629 3.778 0 2.887.856 5.148 2.538 6.828 1.59 1.594 3.775 2.426 6.572 2.515.168.015.319.015.49.015 1.328 0 2.491-.164 3.513-.504 1.024-.344 1.866-.761 2.538-1.265.688-.521 1.177-1.056 1.513-1.606.336-.55.506-1.041.506-1.445 0-.46-.153-.832-.444-1.084-.302-.255-.702-.39-1.175-.39Zm-9.843-8.019c.748-.79 1.712-1.176 2.89-1.176h.017c1.22 0 2.216.387 2.964 1.16.763.775 1.192 1.95 1.315 3.525h-8.56c.167-1.545.628-2.721 1.374-3.509ZM9.82 27.455V16.503c.32.03.626.044.948.044 1.527 0 2.966-.401 4.187-1.116v12.021c0 1.027-.244 1.786-.72 2.292-.472.504-1.1.756-1.863.756-.75 0-1.345-.252-1.835-.773-.472-.504-.717-1.262-.717-2.272ZM54.221 5.689c-.398-.446-.947-.672-1.635-.672-.72 0-1.27.238-1.653.73-.396.475-.58 1.19-.58 2.126v6.785c-.885-.953-1.802-1.637-2.737-2.098a6.967 6.967 0 0 0-2.032-.595 10.35 10.35 0 0 0-1.405-.091c-2.339 0-4.25.804-5.687 2.412-1.437 1.608-2.156 3.84-2.156 6.708 0 1.356.184 2.62.535 3.78.367 1.159.901 2.172 1.607 3.033a7.439 7.439 0 0 0 2.506 1.995c.964.46 2 .698 3.133.698.503 0 .993-.043 1.465-.132a5.76 5.76 0 0 0 .887-.211 7.628 7.628 0 0 0 2.003-1.01c.626-.447 1.24-1.028 1.878-1.726v.446c0 .848.216 1.488.629 1.95.412.446.964.683 1.604.683.626 0 1.178-.223 1.59-.653.413-.446.61-1.101.61-1.977V7.638c.002-.85-.18-1.505-.562-1.949Zm-4.739 18.715c-.413.862-.964 1.503-1.65 1.92a4.219 4.219 0 0 1-2.248.624h-.014a4.177 4.177 0 0 1-2.262-.653c-.703-.446-1.237-1.101-1.636-1.963-.395-.878-.594-1.934-.594-3.185 0-1.176.184-2.215.549-3.093.381-.893.902-1.577 1.59-2.052.672-.492 1.451-.715 2.308-.715h.06c.81 0 1.559.237 2.232.698.703.46 1.252 1.133 1.665 2.009.396.878.612 1.934.612 3.153 0 1.308-.216 2.396-.612 3.257Zm-26.99-10.027v.566c.839-1.072 1.74-1.845 2.72-2.352.992-.49 2.125-.744 3.408-.744 1.24 0 2.355.27 3.331.79a5.025 5.025 0 0 1 2.185 2.232 5.07 5.07 0 0 1 .612 1.831c.091.639.137 1.471.137 2.484v8.527c0 .922-.23 1.62-.658 2.081-.426.475-.993.713-1.68.713-.704 0-1.27-.238-1.713-.727-.444-.478-.658-1.174-.658-2.067v-7.639c0-1.517-.215-2.676-.642-3.48-.427-.801-1.3-1.205-2.581-1.205-.842 0-1.605.252-2.293.73a4.24 4.24 0 0 0-1.528 2.023c-.23.684-.336 1.949-.336 3.84v5.729c0 .936-.228 1.62-.671 2.098-.444.46-1.008.698-1.713.698-.688 0-1.24-.238-1.681-.727-.444-.478-.658-1.174-.658-2.067v-13.26c0-.876.2-1.53.598-1.948.381-.43.916-.656 1.604-.656.413 0 .78.09 1.116.284.335.192.609.475.81.861.197.387.29.85.29 1.385ZM9.849 1.211C13.029.095 16.651.155 19.37 2.444c.506.46 1.084 1.042 1.314 1.726.276.864-.961-.091-1.132-.209-.887-.566-1.772-1.042-2.765-1.368C11.439.987 6.378 3.889 3.23 8.396c-1.314 1.992-2.17 4.09-2.873 6.396-.077.252-.137.581-.276.802-.139.254-.06-.682-.06-.713.106-.953.305-1.874.552-2.796 1.451-4.91 4.66-9 9.275-10.874Zm6.16 8.822a3.777 3.777 0 0 1-3.776 3.778 3.775 3.775 0 0 1-3.773-3.778 3.775 3.775 0 1 1 7.548 0Z\" clip-rule=\"evenodd\" data-darkreader-inline-fill=\"\" style=\"--darkreader-inline-fill: #6fb8ff;\"></path></svg>\n                        <svg id=\"preloader\" width=\"150\" height=\"1\" viewBox=\"0 0 150 1\">\n                    <path id=\"loading-line-bkgd\" d=\"M0,0 L150,0\" fill=\"none\" stroke=\"#F3F2F1\" stroke-width=\"150\" data-darkreader-inline-stroke=\"\" style=\"--darkreader-inline-stroke: #e0ddd9;\"></path>\n                    <style>\n                        #loading-line-main {\n                            stroke-dasharray: 150;\n                            stroke-dashoffset: 150;",
-        "detail": "src.myhtml",
+        "detail": "myhtml",
         "documentation": {}
     },
     {
         "label": "headers",
         "kind": 5,
-        "importPath": "src.scrape_indeed",
-        "description": "src.scrape_indeed",
+        "importPath": "scrape_indeed",
+        "description": "scrape_indeed",
         "peekOfCode": "headers = {\n    \"User-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\"}\n# Skills and Place of Work\nskill = input('Enter your Skill: ').strip()\nplace = input('Enter the location: ').strip()\nno_of_pages = int(input('Enter the #pages to scrape: '))\n# Creating the Main Directory\nmain_dir = os.getcwd() + '\\\\'\nif not os.path.exists(main_dir):\n    os.mkdir(main_dir)",
-        "detail": "src.scrape_indeed",
+        "detail": "scrape_indeed",
         "documentation": {}
     },
     {
         "label": "skill",
         "kind": 5,
-        "importPath": "src.scrape_indeed",
-        "description": "src.scrape_indeed",
+        "importPath": "scrape_indeed",
+        "description": "scrape_indeed",
         "peekOfCode": "skill = input('Enter your Skill: ').strip()\nplace = input('Enter the location: ').strip()\nno_of_pages = int(input('Enter the #pages to scrape: '))\n# Creating the Main Directory\nmain_dir = os.getcwd() + '\\\\'\nif not os.path.exists(main_dir):\n    os.mkdir(main_dir)\n    print('Base Directory Created Successfully.')\n# Name of the CSV File\nfile_name = skill.title() + '_' + place.title() + '_Jobs.csv'",
-        "detail": "src.scrape_indeed",
+        "detail": "scrape_indeed",
         "documentation": {}
     },
     {
         "label": "place",
         "kind": 5,
-        "importPath": "src.scrape_indeed",
-        "description": "src.scrape_indeed",
+        "importPath": "scrape_indeed",
+        "description": "scrape_indeed",
         "peekOfCode": "place = input('Enter the location: ').strip()\nno_of_pages = int(input('Enter the #pages to scrape: '))\n# Creating the Main Directory\nmain_dir = os.getcwd() + '\\\\'\nif not os.path.exists(main_dir):\n    os.mkdir(main_dir)\n    print('Base Directory Created Successfully.')\n# Name of the CSV File\nfile_name = skill.title() + '_' + place.title() + '_Jobs.csv'\n# Path of the CSV File",
-        "detail": "src.scrape_indeed",
+        "detail": "scrape_indeed",
         "documentation": {}
     },
     {
         "label": "no_of_pages",
         "kind": 5,
-        "importPath": "src.scrape_indeed",
-        "description": "src.scrape_indeed",
+        "importPath": "scrape_indeed",
+        "description": "scrape_indeed",
         "peekOfCode": "no_of_pages = int(input('Enter the #pages to scrape: '))\n# Creating the Main Directory\nmain_dir = os.getcwd() + '\\\\'\nif not os.path.exists(main_dir):\n    os.mkdir(main_dir)\n    print('Base Directory Created Successfully.')\n# Name of the CSV File\nfile_name = skill.title() + '_' + place.title() + '_Jobs.csv'\n# Path of the CSV File\nfile_path = main_dir + file_name",
-        "detail": "src.scrape_indeed",
+        "detail": "scrape_indeed",
         "documentation": {}
     },
     {
         "label": "main_dir",
         "kind": 5,
-        "importPath": "src.scrape_indeed",
-        "description": "src.scrape_indeed",
+        "importPath": "scrape_indeed",
+        "description": "scrape_indeed",
         "peekOfCode": "main_dir = os.getcwd() + '\\\\'\nif not os.path.exists(main_dir):\n    os.mkdir(main_dir)\n    print('Base Directory Created Successfully.')\n# Name of the CSV File\nfile_name = skill.title() + '_' + place.title() + '_Jobs.csv'\n# Path of the CSV File\nfile_path = main_dir + file_name\n# Writing to the CSV File\nwith open(file_path, mode='w') as file:",
-        "detail": "src.scrape_indeed",
+        "detail": "scrape_indeed",
         "documentation": {}
     },
     {
         "label": "file_name",
         "kind": 5,
-        "importPath": "src.scrape_indeed",
-        "description": "src.scrape_indeed",
+        "importPath": "scrape_indeed",
+        "description": "scrape_indeed",
         "peekOfCode": "file_name = skill.title() + '_' + place.title() + '_Jobs.csv'\n# Path of the CSV File\nfile_path = main_dir + file_name\n# Writing to the CSV File\nwith open(file_path, mode='w') as file:\n    writer = csv.writer(file, delimiter=',', lineterminator='\\n')\n    # Adding the Column Names to the CSV File\n    writer.writerow(\n        ['JOB_NAME', 'COMPANY', 'LOCATION', 'POSTED', 'APPLY_LINK'])\n    # Requesting and getting the webpage using requests",
-        "detail": "src.scrape_indeed",
+        "detail": "scrape_indeed",
         "documentation": {}
     },
     {
         "label": "file_path",
         "kind": 5,
-        "importPath": "src.scrape_indeed",
-        "description": "src.scrape_indeed",
+        "importPath": "scrape_indeed",
+        "description": "scrape_indeed",
         "peekOfCode": "file_path = main_dir + file_name\n# Writing to the CSV File\nwith open(file_path, mode='w') as file:\n    writer = csv.writer(file, delimiter=',', lineterminator='\\n')\n    # Adding the Column Names to the CSV File\n    writer.writerow(\n        ['JOB_NAME', 'COMPANY', 'LOCATION', 'POSTED', 'APPLY_LINK'])\n    # Requesting and getting the webpage using requests\n    print(f'\\nScraping in progress...\\n')\n    for page in range(no_of_pages):",
-        "detail": "src.scrape_indeed",
+        "detail": "scrape_indeed",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "html = requests.get(url, headers=get_header()).text\nparser = HTMLParser(html)\nprint(\"next button ->\", parser.css('a[aria-label=\"Next Page\"]'))",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "parser = HTMLParser(html)\nprint(\"next button ->\", parser.css('a[aria-label=\"Next Page\"]'))",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "get_header",
+        "kind": 2,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "def get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)\n    return parser\nstarting_url = f\"{INDEEED_BASE_URL}/jobs?q=developer&l=casablanca\"",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "get_parser",
+        "kind": 2,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "def get_parser(session, url):\n    parser = session.get(url)\n    return parser\nstarting_url = f\"{INDEEED_BASE_URL}/jobs?q=developer&l=casablanca\"\nsession = HTMLSession()\njob_titles = []\ni = 0\nwhile True:\n    print(\"-------->\", \"Page:\", i, \"<--------\")\n    if i == 0:",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "NEXT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "NEXT_PAGE_BUTTON_SELECTOR = 'a[aria-label=\"Next Page\"]'\nCURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "CURRENT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "CURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "PREVIOUS_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "PREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_CARDS_LIST_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "JOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_CARD_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "JOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_TITLE_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "JOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_COMPANY_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "JOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_LOCATION_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "JOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_DATE_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "JOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "INDEEED_BASE_URL",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "INDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)\n    return parser",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "starting_url",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "starting_url = f\"{INDEEED_BASE_URL}/jobs?q=developer&l=casablanca\"\nsession = HTMLSession()\njob_titles = []\ni = 0\nwhile True:\n    print(\"-------->\", \"Page:\", i, \"<--------\")\n    if i == 0:\n        print(\"starting_url: \", starting_url)\n        parser = get_parser(session, starting_url)\n    next_page = parser.html.find('a[aria-label=\"Next Page\"]')",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "session = HTMLSession()\njob_titles = []\ni = 0\nwhile True:\n    print(\"-------->\", \"Page:\", i, \"<--------\")\n    if i == 0:\n        print(\"starting_url: \", starting_url)\n        parser = get_parser(session, starting_url)\n    next_page = parser.html.find('a[aria-label=\"Next Page\"]')\n    for job in parser.html.find(JOB_CARD_SELECTOR):",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "job_titles",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "job_titles = []\ni = 0\nwhile True:\n    print(\"-------->\", \"Page:\", i, \"<--------\")\n    if i == 0:\n        print(\"starting_url: \", starting_url)\n        parser = get_parser(session, starting_url)\n    next_page = parser.html.find('a[aria-label=\"Next Page\"]')\n    for job in parser.html.find(JOB_CARD_SELECTOR):\n        if len(job.find(JOB_TITLE_SELECTOR)) > 0:",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "i = 0\nwhile True:\n    print(\"-------->\", \"Page:\", i, \"<--------\")\n    if i == 0:\n        print(\"starting_url: \", starting_url)\n        parser = get_parser(session, starting_url)\n    next_page = parser.html.find('a[aria-label=\"Next Page\"]')\n    for job in parser.html.find(JOB_CARD_SELECTOR):\n        if len(job.find(JOB_TITLE_SELECTOR)) > 0:\n            job_titles.append(job.find(JOB_TITLE_SELECTOR)[0].text)",
+        "detail": "test_requests_html",
         "documentation": {}
     },
     {
         "label": "time_strings",
         "kind": 5,
-        "importPath": "src.timeparse",
-        "description": "src.timeparse",
+        "importPath": "timeparse",
+        "description": "timeparse",
         "peekOfCode": "time_strings = [\n    \"just now\",\n    \"12 seconds ago\",\n    \"3 minutes ago\",\n    \"2 hours ago\",\n    \"24 days ago\",\n    \"6 months ago\",\n    \"2 years ago\",\n    \"in 12 seconds\",\n    \"in 3 minutes\",",
-        "detail": "src.timeparse",
+        "detail": "timeparse",
         "documentation": {}
     },
     {
         "label": "current_time",
         "kind": 5,
-        "importPath": "src.timeparse",
-        "description": "src.timeparse",
+        "importPath": "timeparse",
+        "description": "timeparse",
         "peekOfCode": "current_time = datetime.now()\n# Parse the relative time strings\nparsed_times = [dateparser.parse(time_str, settings={'RELATIVE_BASE': current_time}) for time_str in time_strings]\n# Display the results\nfor original, parsed in zip(time_strings, parsed_times):\n    print(f\"{original} -> {parsed}\")",
-        "detail": "src.timeparse",
+        "detail": "timeparse",
         "documentation": {}
     },
     {
         "label": "parsed_times",
         "kind": 5,
-        "importPath": "src.timeparse",
-        "description": "src.timeparse",
+        "importPath": "timeparse",
+        "description": "timeparse",
         "peekOfCode": "parsed_times = [dateparser.parse(time_str, settings={'RELATIVE_BASE': current_time}) for time_str in time_strings]\n# Display the results\nfor original, parsed in zip(time_strings, parsed_times):\n    print(f\"{original} -> {parsed}\")",
-        "detail": "src.timeparse",
+        "detail": "timeparse",
         "documentation": {}
     }
 ]
