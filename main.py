@@ -95,12 +95,12 @@ for page in range(pages):
         #     break
 
 print("titles: ", titles)
-# job = {
-#     "title": get_text(node.html, "h2.jobTitle > a"),
-#     "company": get_text(node.html, "span.companyName"),
-#     "location": get_text(node.html, "div.companyLocation"),
-#     "posted": get_text(node.html, "span.date"),
-# }
+job = {
+    "title": get_text(node.html, "h2.jobTitle > a"),
+    "company": get_text(node.html, "span.companyName"),
+    "location": get_text(node.html, "div.companyLocation"),
+    "posted": get_text(node.html, "span.date"),
+}
 
 
 # ---------------------------------
@@ -129,7 +129,6 @@ print("titles: ", titles)
 # print(parser.html.find('a[aria-label="Next Page"]'))
 
 # ---------------------------------
-
 
 
 # def get_header():

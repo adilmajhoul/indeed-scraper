@@ -14,8 +14,8 @@ JOB_TITLE_SELECTOR = "h2.jobTitle"
 JOB_COMPANY_SELECTOR = 'span[data-testid="company-name"]'
 JOB_LOCATION_SELECTOR = 'div[data-testid="text-location"]'
 JOB_DATE_SELECTOR = 'span[data-testid="myJobsStateDate"]'
-JOB_LINK_SELECTOR = "a.jcs-JobTitle"
 
+JOB_LINK_SELECTOR = "a.jcs-JobTitle"
 
 INDEEED_BASE_URL = "https://ma.indeed.com"
 
@@ -34,33 +34,17 @@ def get_parser(session, url):
 
 
 starting_url = f"{INDEEED_BASE_URL}/jobs?q=developer&l=casablanca"
-
-
 session = HTMLSession()
-job_titles = []
-i = 0
-while True:
-    print("-------->", "Page:", i, "<--------")
-    if i == 0:
-        print("starting_url: ", starting_url)
-        parser = get_parser(session, starting_url)
 
-    next_page = parser.html.find('a[aria-label="Next Page"]')
+print("starting_url: ", starting_url)
+parser = get_parser(session, starting_url)
 
-    for job in parser.html.find(JOB_CARD_SELECTOR):
-        if len(job.find(JOB_TITLE_SELECTOR)) > 0:
-            job_titles.append(job.find(JOB_TITLE_SELECTOR)[0].text)
+posted = parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_DATE_SELECTOR)[0].text
+print(posted)
+print(
+    INDEEED_BASE_URL
+    + parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_LINK_SELECTOR)[0].attrs["href"]
+)
 
-    job_titles.append("************")
 
-    if len(next_page) > 0 and next_page is not None:
-        url = INDEEED_BASE_URL + next_page[0].attrs["href"]
-        parser = get_parser(session, url)
-    else:
-        break
-
-    print("url: ", url)
-
-    i += 1
-
-print(job_titles)
+print(arr)

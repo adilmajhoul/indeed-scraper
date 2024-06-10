@@ -1,3 +1,8 @@
+import tkinter as tk
+from tkinter import ttk
+from modular import IndeedScraper
+
+
 def on_button_clicked():
     # Get the values from the input fields
     queries_input = entry_queries.get()
@@ -32,7 +37,6 @@ def on_button_clicked():
 
 root = tk.Tk()
 root.title("Indeed Scraper")
-root.geometry("800x600")  # Set the size of the window to 800x600 pixels
 
 frame = ttk.Frame(root, padding="10")
 frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))

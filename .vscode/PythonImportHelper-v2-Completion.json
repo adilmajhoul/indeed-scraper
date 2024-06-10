@@ -1,5 +1,125 @@
 [
     {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLParser",
+        "importPath": "selectolax.parser",
+        "description": "selectolax.parser",
+        "isExtraImport": true,
+        "detail": "selectolax.parser",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLSession",
+        "importPath": "requests_html",
+        "description": "requests_html",
+        "isExtraImport": true,
+        "detail": "requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLSession",
+        "importPath": "requests_html",
+        "description": "requests_html",
+        "isExtraImport": true,
+        "detail": "requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLSession",
+        "importPath": "requests_html",
+        "description": "requests_html",
+        "isExtraImport": true,
+        "detail": "requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLSession",
+        "importPath": "requests_html",
+        "description": "requests_html",
+        "isExtraImport": true,
+        "detail": "requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "Headers",
+        "importPath": "fake_headers",
+        "description": "fake_headers",
+        "isExtraImport": true,
+        "detail": "fake_headers",
+        "documentation": {}
+    },
+    {
+        "label": "Headers",
+        "importPath": "fake_headers",
+        "description": "fake_headers",
+        "isExtraImport": true,
+        "detail": "fake_headers",
+        "documentation": {}
+    },
+    {
+        "label": "Headers",
+        "importPath": "fake_headers",
+        "description": "fake_headers",
+        "isExtraImport": true,
+        "detail": "fake_headers",
+        "documentation": {}
+    },
+    {
+        "label": "Headers",
+        "importPath": "fake_headers",
+        "description": "fake_headers",
+        "isExtraImport": true,
+        "detail": "fake_headers",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -9,43 +129,11 @@
         "documentation": {}
     },
     {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
+        "label": "urlencode",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
         "isExtraImport": true,
-        "detail": "selectolax.parser",
-        "documentation": {}
-    },
-    {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
-        "isExtraImport": true,
-        "detail": "selectolax.parser",
-        "documentation": {}
-    },
-    {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
-        "isExtraImport": true,
-        "detail": "selectolax.parser",
-        "documentation": {}
-    },
-    {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
-        "isExtraImport": true,
-        "detail": "selectolax.parser",
-        "documentation": {}
-    },
-    {
-        "label": "HTMLParser",
-        "importPath": "selectolax.parser",
-        "description": "selectolax.parser",
-        "isExtraImport": true,
-        "detail": "selectolax.parser",
+        "detail": "urllib.parse",
         "documentation": {}
     },
     {
@@ -147,35 +235,12 @@
         "documentation": {}
     },
     {
-        "label": "HTMLSession",
-        "importPath": "requests_html",
-        "description": "requests_html",
+        "label": "csv",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "requests_html",
-        "documentation": {}
-    },
-    {
-        "label": "HTMLSession",
-        "importPath": "requests_html",
-        "description": "requests_html",
-        "isExtraImport": true,
-        "detail": "requests_html",
-        "documentation": {}
-    },
-    {
-        "label": "Headers",
-        "importPath": "fake_headers",
-        "description": "fake_headers",
-        "isExtraImport": true,
-        "detail": "fake_headers",
-        "documentation": {}
-    },
-    {
-        "label": "Headers",
-        "importPath": "fake_headers",
-        "description": "fake_headers",
-        "isExtraImport": true,
-        "detail": "fake_headers",
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
         "documentation": {}
     },
     {
@@ -185,15 +250,6 @@
         "importPath": "os",
         "description": "os",
         "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "csv",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "csv",
-        "description": "csv",
-        "detail": "csv",
         "documentation": {}
     },
     {
@@ -214,6 +270,31 @@
         "documentation": {}
     },
     {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "IndeedScraper",
+        "importPath": "modular",
+        "description": "modular",
+        "isExtraImport": true,
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
         "label": "dateparser",
         "kind": 6,
         "isExtraImport": true,
@@ -228,6 +309,159 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "get_header",
+        "kind": 2,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "def get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)\n    return parser\nstarting_url = f\"{INDEEED_BASE_URL}/jobs?q=developer&l=casablanca\"",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "get_parser",
+        "kind": 2,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "def get_parser(session, url):\n    parser = session.get(url)\n    return parser\nstarting_url = f\"{INDEEED_BASE_URL}/jobs?q=developer&l=casablanca\"\nsession = HTMLSession()\nprint(\"starting_url: \", starting_url)\nparser = get_parser(session, starting_url)\nposted = parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_DATE_SELECTOR)[0].text\nprint(posted)\nprint(",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "NEXT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "NEXT_PAGE_BUTTON_SELECTOR = 'a[aria-label=\"Next Page\"]'\nCURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "CURRENT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "CURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "PREVIOUS_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "PREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_CARDS_LIST_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "JOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_CARD_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "JOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_TITLE_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "JOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_COMPANY_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "JOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_LOCATION_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "JOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_DATE_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "JOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_LINK_SELECTOR",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "JOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "INDEEED_BASE_URL",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "INDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)\n    return parser",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "starting_url",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "starting_url = f\"{INDEEED_BASE_URL}/jobs?q=developer&l=casablanca\"\nsession = HTMLSession()\nprint(\"starting_url: \", starting_url)\nparser = get_parser(session, starting_url)\nposted = parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_DATE_SELECTOR)[0].text\nprint(posted)\nprint(\n    INDEEED_BASE_URL\n    + parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_LINK_SELECTOR)[0].attrs[\"href\"]\n)",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "session = HTMLSession()\nprint(\"starting_url: \", starting_url)\nparser = get_parser(session, starting_url)\nposted = parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_DATE_SELECTOR)[0].text\nprint(posted)\nprint(\n    INDEEED_BASE_URL\n    + parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_LINK_SELECTOR)[0].attrs[\"href\"]\n)\nprint(arr)",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "parser = get_parser(session, starting_url)\nposted = parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_DATE_SELECTOR)[0].text\nprint(posted)\nprint(\n    INDEEED_BASE_URL\n    + parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_LINK_SELECTOR)[0].attrs[\"href\"]\n)\nprint(arr)",
+        "detail": "get_direct_text_only",
+        "documentation": {}
+    },
+    {
+        "label": "posted",
+        "kind": 5,
+        "importPath": "get_direct_text_only",
+        "description": "get_direct_text_only",
+        "peekOfCode": "posted = parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_DATE_SELECTOR)[0].text\nprint(posted)\nprint(\n    INDEEED_BASE_URL\n    + parser.html.find(JOB_CARD_SELECTOR)[0].find(JOB_LINK_SELECTOR)[0].attrs[\"href\"]\n)\nprint(arr)",
+        "detail": "get_direct_text_only",
         "documentation": {}
     },
     {
@@ -384,6 +618,15 @@
         "documentation": {}
     },
     {
+        "label": "job",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "job = {\n    \"title\": get_text(node.html, \"h2.jobTitle > a\"),\n    \"company\": get_text(node.html, \"span.companyName\"),\n    \"location\": get_text(node.html, \"div.companyLocation\"),\n    \"posted\": get_text(node.html, \"span.date\"),\n}\n# ---------------------------------\n# Find all <a> tags\n# a_tags = soup.find_all(\n#     \"nav\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "url",
         "kind": 5,
         "importPath": "main_",
@@ -528,6 +771,105 @@
         "documentation": {}
     },
     {
+        "label": "IndeedScraper",
+        "kind": 6,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "class IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location\n        self.sort_by = sort_by\n        self.INDEEED_SEARCH_BASE_URL = f\"https://{country}.indeed.com/jobs\"\n        self.INDEEED_BASE_URL = f\"https://{country}.indeed.com\"\n        self.jobs = []\n        self.session = HTMLSession()\n        self.headers = Headers(",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "NEXT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "NEXT_PAGE_BUTTON_SELECTOR = 'a[aria-label=\"Next Page\"]'\nCURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "CURRENT_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "CURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "PREVIOUS_PAGE_BUTTON_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "PREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_CARDS_LIST_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "JOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_CARD_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "JOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_TITLE_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "JOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location\n        self.sort_by = sort_by",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_COMPANY_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "JOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location\n        self.sort_by = sort_by\n        self.INDEEED_SEARCH_BASE_URL = f\"https://{country}.indeed.com/jobs\"",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_LOCATION_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "JOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location\n        self.sort_by = sort_by\n        self.INDEEED_SEARCH_BASE_URL = f\"https://{country}.indeed.com/jobs\"\n        self.INDEEED_BASE_URL = f\"https://{country}.indeed.com\"",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_DATE_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "JOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location\n        self.sort_by = sort_by\n        self.INDEEED_SEARCH_BASE_URL = f\"https://{country}.indeed.com/jobs\"\n        self.INDEEED_BASE_URL = f\"https://{country}.indeed.com\"\n        self.jobs = []",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_LINK_SELECTOR",
+        "kind": 5,
+        "importPath": "modular",
+        "description": "modular",
+        "peekOfCode": "JOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass IndeedScraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location\n        self.sort_by = sort_by\n        self.INDEEED_SEARCH_BASE_URL = f\"https://{country}.indeed.com/jobs\"\n        self.INDEEED_BASE_URL = f\"https://{country}.indeed.com\"\n        self.jobs = []\n        self.session = HTMLSession()",
+        "detail": "modular",
+        "documentation": {}
+    },
+    {
         "label": "html_content",
         "kind": 5,
         "importPath": "myhtml",
@@ -600,20 +942,218 @@
         "documentation": {}
     },
     {
-        "label": "html",
+        "label": "on_button_clicked",
+        "kind": 2,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "def on_button_clicked():\n    # Get the values from the input fields\n    queries_input = entry_queries.get()\n    location = entry_location.get()\n    sort_by = entry_sort_by.get()\n    country = entry_country.get()\n    # If the queries field is empty, use the default values\n    if not queries_input:\n        queries = [\"web developer\", \"backend engineer\"]\n    else:",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "root",
         "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Indeed Scraper\")\nframe = ttk.Frame(root, padding=\"10\")\nframe.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))\n# Queries input field\nlabel_queries = ttk.Label(frame, text=\"Queries:\")\nlabel_queries.grid(row=0, column=0, sticky=tk.W)\nentry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)\n# Location input field",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "frame",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "frame = ttk.Frame(root, padding=\"10\")\nframe.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))\n# Queries input field\nlabel_queries = ttk.Label(frame, text=\"Queries:\")\nlabel_queries.grid(row=0, column=0, sticky=tk.W)\nentry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)\n# Location input field\nlabel_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "label_queries",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "label_queries = ttk.Label(frame, text=\"Queries:\")\nlabel_queries.grid(row=0, column=0, sticky=tk.W)\nentry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)\n# Location input field\nlabel_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)\nentry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "entry_queries",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "entry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)\n# Location input field\nlabel_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)\nentry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field\nlabel_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "label_location",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "label_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)\nentry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field\nlabel_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)\nentry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "entry_location",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "entry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field\nlabel_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)\nentry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field\nlabel_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "label_sort_by",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "label_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)\nentry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field\nlabel_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)\nentry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "entry_sort_by",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "entry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field\nlabel_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)\nentry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button\nbutton = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "label_country",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "label_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)\nentry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button\nbutton = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)\nroot.mainloop()",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "entry_country",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "entry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button\nbutton = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)\nroot.mainloop()",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "button",
+        "kind": 5,
+        "importPath": "scraper_gui",
+        "description": "scraper_gui",
+        "peekOfCode": "button = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)\nroot.mainloop()",
+        "detail": "scraper_gui",
+        "documentation": {}
+    },
+    {
+        "label": "on_button_clicked",
+        "kind": 2,
         "importPath": "tempCodeRunnerFile",
         "description": "tempCodeRunnerFile",
-        "peekOfCode": "html = requests.get(url, headers=get_header()).text\nparser = HTMLParser(html)\nprint(\"next button ->\", parser.css('a[aria-label=\"Next Page\"]'))",
+        "peekOfCode": "def on_button_clicked():\n    # Get the values from the input fields\n    queries_input = entry_queries.get()\n    location = entry_location.get()\n    sort_by = entry_sort_by.get()\n    country = entry_country.get()\n    # If the queries field is empty, use the default values\n    if not queries_input:\n        queries = [\"web developer\", \"backend engineer\"]\n    else:",
         "detail": "tempCodeRunnerFile",
         "documentation": {}
     },
     {
-        "label": "parser",
+        "label": "root",
         "kind": 5,
         "importPath": "tempCodeRunnerFile",
         "description": "tempCodeRunnerFile",
-        "peekOfCode": "parser = HTMLParser(html)\nprint(\"next button ->\", parser.css('a[aria-label=\"Next Page\"]'))",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Indeed Scraper\")\nroot.geometry(\"800x600\")  # Set the size of the window to 800x600 pixels\nframe = ttk.Frame(root, padding=\"10\")\nframe.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))\n# Queries input field\nlabel_queries = ttk.Label(frame, text=\"Queries:\")\nlabel_queries.grid(row=0, column=0, sticky=tk.W)\nentry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "frame",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "frame = ttk.Frame(root, padding=\"10\")\nframe.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))\n# Queries input field\nlabel_queries = ttk.Label(frame, text=\"Queries:\")\nlabel_queries.grid(row=0, column=0, sticky=tk.W)\nentry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)\n# Location input field\nlabel_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "label_queries",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "label_queries = ttk.Label(frame, text=\"Queries:\")\nlabel_queries.grid(row=0, column=0, sticky=tk.W)\nentry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)\n# Location input field\nlabel_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)\nentry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "entry_queries",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "entry_queries = ttk.Entry(frame)\nentry_queries.grid(row=0, column=1, sticky=tk.E)\n# Location input field\nlabel_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)\nentry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field\nlabel_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "label_location",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "label_location = ttk.Label(frame, text=\"Location:\")\nlabel_location.grid(row=1, column=0, sticky=tk.W)\nentry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field\nlabel_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)\nentry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "entry_location",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "entry_location = ttk.Entry(frame)\nentry_location.grid(row=1, column=1, sticky=tk.E)\n# Sort by input field\nlabel_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)\nentry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field\nlabel_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "label_sort_by",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "label_sort_by = ttk.Label(frame, text=\"Sort by:\")\nlabel_sort_by.grid(row=2, column=0, sticky=tk.W)\nentry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field\nlabel_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)\nentry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "entry_sort_by",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "entry_sort_by = ttk.Entry(frame)\nentry_sort_by.grid(row=2, column=1, sticky=tk.E)\n# Country input field\nlabel_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)\nentry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button\nbutton = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "label_country",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "label_country = ttk.Label(frame, text=\"Country:\")\nlabel_country.grid(row=3, column=0, sticky=tk.W)\nentry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button\nbutton = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)\nroot.mainloop()",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "entry_country",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "entry_country = ttk.Entry(frame)\nentry_country.grid(row=3, column=1, sticky=tk.E)\n# Button\nbutton = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)\nroot.mainloop()",
+        "detail": "tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "button",
+        "kind": 5,
+        "importPath": "tempCodeRunnerFile",
+        "description": "tempCodeRunnerFile",
+        "peekOfCode": "button = ttk.Button(frame, text=\"Scrape\", command=on_button_clicked)\nbutton.grid(row=4, column=0, columnspan=2, sticky=tk.E)\nroot.mainloop()",
         "detail": "tempCodeRunnerFile",
         "documentation": {}
     },
@@ -640,7 +1180,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "NEXT_PAGE_BUTTON_SELECTOR = 'a[aria-label=\"Next Page\"]'\nCURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"",
+        "peekOfCode": "NEXT_PAGE_BUTTON_SELECTOR = 'a[aria-label=\"Next Page\"]'\nCURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -649,7 +1189,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "CURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():",
+        "peekOfCode": "CURRENT_PAGE_BUTTON_SELECTOR = \"\"\nPREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -658,7 +1198,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "PREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(",
+        "peekOfCode": "PREVIOUS_PAGE_BUTTON_SELECTOR = \"\"\nJOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -667,7 +1207,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "JOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA",
+        "peekOfCode": "JOB_CARDS_LIST_SELECTOR = \"#mosaic-provider-jobcards > ul\"\nJOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -676,7 +1216,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "JOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform",
+        "peekOfCode": "JOB_CARD_SELECTOR = \"#mosaic-provider-jobcards > ul > li\"\nJOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -685,7 +1225,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "JOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers",
+        "peekOfCode": "JOB_TITLE_SELECTOR = \"h2.jobTitle\"\nJOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -694,7 +1234,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "JOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()",
+        "peekOfCode": "JOB_COMPANY_SELECTOR = 'span[data-testid=\"company-name\"]'\nJOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -703,7 +1243,7 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "JOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):",
+        "peekOfCode": "JOB_LOCATION_SELECTOR = 'div[data-testid=\"text-location\"]'\nJOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -712,7 +1252,16 @@
         "kind": 5,
         "importPath": "test_requests_html",
         "description": "test_requests_html",
-        "peekOfCode": "JOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)",
+        "peekOfCode": "JOB_DATE_SELECTOR = 'span[data-testid=\"myJobsStateDate\"]'\nJOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):",
+        "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "JOB_LINK_SELECTOR",
+        "kind": 5,
+        "importPath": "test_requests_html",
+        "description": "test_requests_html",
+        "peekOfCode": "JOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nINDEEED_BASE_URL = \"https://ma.indeed.com\"\ndef get_header():\n    return Headers(\n        browser=\"chrome\",  # Generate only Chrome UA\n        os=\"mac\",  # Generate ony Windows platform\n        headers=True,  # generate misc headers\n    ).generate()\ndef get_parser(session, url):\n    parser = session.get(url)",
         "detail": "test_requests_html",
         "documentation": {}
     },
@@ -759,6 +1308,33 @@
         "description": "test_requests_html",
         "peekOfCode": "i = 0\nwhile True:\n    print(\"-------->\", \"Page:\", i, \"<--------\")\n    if i == 0:\n        print(\"starting_url: \", starting_url)\n        parser = get_parser(session, starting_url)\n    next_page = parser.html.find('a[aria-label=\"Next Page\"]')\n    for job in parser.html.find(JOB_CARD_SELECTOR):\n        if len(job.find(JOB_TITLE_SELECTOR)) > 0:\n            job_titles.append(job.find(JOB_TITLE_SELECTOR)[0].text)",
         "detail": "test_requests_html",
+        "documentation": {}
+    },
+    {
+        "label": "on_button_click",
+        "kind": 2,
+        "importPath": "test_tkinter",
+        "description": "test_tkinter",
+        "peekOfCode": "def on_button_click():\n    print(\"Button clicked!\")\nroot = tk.Tk()\nroot.title(\"Button Example\")\n# Create a button widget\nbutton = tk.Button(root, text=\"Click Me\", command=on_button_click)\nroot.mainloop()",
+        "detail": "test_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "test_tkinter",
+        "description": "test_tkinter",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Button Example\")\n# Create a button widget\nbutton = tk.Button(root, text=\"Click Me\", command=on_button_click)\nroot.mainloop()",
+        "detail": "test_tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "button",
+        "kind": 5,
+        "importPath": "test_tkinter",
+        "description": "test_tkinter",
+        "peekOfCode": "button = tk.Button(root, text=\"Click Me\", command=on_button_click)\nroot.mainloop()",
+        "detail": "test_tkinter",
         "documentation": {}
     },
     {
