@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from modular import IndeedScraper
+from modules.indeed_scraper import IndeedScraper
 
 
 def on_button_clicked():
