@@ -7,7 +7,7 @@ from selectolax.parser import HTMLParser
 
 # import matplotlib.pyplot as plt
 from urllib.parse import urlencode
-from html_content import html_content
+from dummy_html import html_content
 from modules.lib import jrint, get_text, build_url
 from requests_html import HTMLSession
 from fake_headers import Headers

@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from modules.indeed_scraper import IndeedScraper
+from modules.scraper import Scraper
 
 
 def on_button_clicked():
@@ -25,8 +25,8 @@ def on_button_clicked():
     if not country:
         country = "ma"
 
-    # Create an instance of the IndeedScraper class
-    scraper = IndeedScraper(queries, location, sort_by, country)
+    # Create an instance of the Scraper class
+    scraper = Scraper(queries, location, sort_by, country)
 
     # Call the scrape method of the class
     scraper.scrape()
