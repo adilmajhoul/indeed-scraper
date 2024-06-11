@@ -114,6 +114,14 @@
         "documentation": {}
     },
     {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
         "label": "Scraper",
         "importPath": "modules.scraper",
         "description": "modules.scraper",
@@ -399,6 +407,24 @@
         "description": "drafting.drafting_timeparse",
         "peekOfCode": "parsed_times = [dateparser.parse(time_str, settings={'RELATIVE_BASE': current_time}) for time_str in time_strings]\n# Display the results\nfor original, parsed in zip(time_strings, parsed_times):\n    print(f\"{original} -> {parsed}\")",
         "detail": "drafting.drafting_timeparse",
+        "documentation": {}
+    },
+    {
+        "label": "window",
+        "kind": 5,
+        "importPath": "drafting.miles_km_converter",
+        "description": "drafting.miles_km_converter",
+        "peekOfCode": "window = tk.Tk()\nwindow.title(\"Miles to Kilometers Converter\")\nwindow.geometry(\"500x250\")\ntitle_label = ttk.Label(\n    window, text=\"Miles to Kilometers Converter\", font=\"Times 20 bold\"\n)\ntitle_label.pack()\nwindow.mainloop()",
+        "detail": "drafting.miles_km_converter",
+        "documentation": {}
+    },
+    {
+        "label": "title_label",
+        "kind": 5,
+        "importPath": "drafting.miles_km_converter",
+        "description": "drafting.miles_km_converter",
+        "peekOfCode": "title_label = ttk.Label(\n    window, text=\"Miles to Kilometers Converter\", font=\"Times 20 bold\"\n)\ntitle_label.pack()\nwindow.mainloop()",
+        "detail": "drafting.miles_km_converter",
         "documentation": {}
     },
     {
