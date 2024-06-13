@@ -1,0 +1,1 @@
+ args=["--disable-blink-features=AutomationControlled"]

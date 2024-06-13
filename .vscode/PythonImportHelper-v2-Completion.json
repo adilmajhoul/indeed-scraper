@@ -1,5 +1,29 @@
 [
     {
+        "label": "Playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "expect",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
         "label": "HTMLParser",
         "importPath": "selectolax.parser",
         "description": "selectolax.parser",
@@ -227,6 +251,33 @@
         "description": "modules.lib",
         "isExtraImport": true,
         "detail": "modules.lib",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "drafting.drafting_playwright",
+        "description": "drafting.drafting_playwright",
+        "peekOfCode": "def run(playwright: Playwright) -> None:\n    browser = playwright.chromium.launch(\n        headless=False, args=[\"--disable-blink-features=AutomationControlled\"]\n    )\n    context = browser.new_context()\n    page = context.new_page()\n    page.goto(\"https://secure.indeed.com/auth\")\n    page.wait_for_timeout(7000)\n    page.get_by_label(\"Email address *\").click()\n    with page.expect_popup() as page1_info:",
+        "detail": "drafting.drafting_playwright",
+        "documentation": {}
+    },
+    {
+        "label": "USERNAME",
+        "kind": 5,
+        "importPath": "drafting.drafting_playwright",
+        "description": "drafting.drafting_playwright",
+        "peekOfCode": "USERNAME = \"your-email@example.com\"\nPASSWORD = \"your-password\"\ndef run(playwright: Playwright) -> None:\n    browser = playwright.chromium.launch(\n        headless=False, args=[\"--disable-blink-features=AutomationControlled\"]\n    )\n    context = browser.new_context()\n    page = context.new_page()\n    page.goto(\"https://secure.indeed.com/auth\")\n    page.wait_for_timeout(7000)",
+        "detail": "drafting.drafting_playwright",
+        "documentation": {}
+    },
+    {
+        "label": "PASSWORD",
+        "kind": 5,
+        "importPath": "drafting.drafting_playwright",
+        "description": "drafting.drafting_playwright",
+        "peekOfCode": "PASSWORD = \"your-password\"\ndef run(playwright: Playwright) -> None:\n    browser = playwright.chromium.launch(\n        headless=False, args=[\"--disable-blink-features=AutomationControlled\"]\n    )\n    context = browser.new_context()\n    page = context.new_page()\n    page.goto(\"https://secure.indeed.com/auth\")\n    page.wait_for_timeout(7000)\n    page.get_by_label(\"Email address *\").click()",
+        "detail": "drafting.drafting_playwright",
         "documentation": {}
     },
     {
