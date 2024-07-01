@@ -116,7 +116,7 @@ class Scraper:
                 for job in parser.html.find("#mosaic-provider-jobcards > ul > li"):
                     if len(job.find(JOB_TITLE_SELECTOR)) > 0:
                         job_link = (
-                            self.INDEED_JOB_PAGE_BASE_URL
+                           self.INDEED_JOB_PAGE_BASE_URL
                             + job.find(JOB_LINK_SELECTOR)[0].attrs["data-jk"]
                             if self.does_elment_exist(job.find(JOB_LINK_SELECTOR))
                             else False
@@ -149,7 +149,7 @@ class Scraper:
                             )
 
                         else:
-                            print("outside job")
+                            print("outside job") 
 
                 # Get the next page URL if its None break loop
                 if len(next_page) > 0:

@@ -104,6 +104,14 @@
         "documentation": {}
     },
     {
+        "label": "Headers",
+        "importPath": "fake_headers",
+        "description": "fake_headers",
+        "isExtraImport": true,
+        "detail": "fake_headers",
+        "documentation": {}
+    },
+    {
         "label": "dateparser",
         "kind": 6,
         "isExtraImport": true,
@@ -187,12 +195,104 @@
         "documentation": {}
     },
     {
+        "label": "urlencode",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
         "label": "csv",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "csv",
         "description": "csv",
         "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "scrapy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "signals",
+        "importPath": "scrapy",
+        "description": "scrapy",
+        "isExtraImport": true,
+        "detail": "scrapy",
+        "documentation": {}
+    },
+    {
+        "label": "IndeedScraperItem",
+        "importPath": "indeed_scraper.items",
+        "description": "indeed_scraper.items",
+        "isExtraImport": true,
+        "detail": "indeed_scraper.items",
+        "documentation": {}
+    },
+    {
+        "label": "is_item",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {}
+    },
+    {
+        "label": "ItemAdapter",
+        "importPath": "itemadapter",
+        "description": "itemadapter",
+        "isExtraImport": true,
+        "detail": "itemadapter",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "pformat",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "jmespath",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "exceptions",
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "isExtraImport": true,
+        "detail": "jmespath",
         "documentation": {}
     },
     {
@@ -719,6 +819,321 @@
         "description": "modules.scraper",
         "peekOfCode": "JOB_LINK_SELECTOR = \"a.jcs-JobTitle\"\nclass Scraper:\n    def __init__(self, queries, location, sort_by=None, country=\"ma\"):\n        self.queries = queries\n        self.location = location\n        self.sort_by = sort_by\n        self.INDEEED_SEARCH_BASE_URL = f\"https://{country}.indeed.com/jobs\"\n        self.INDEEED_BASE_URL = f\"https://{country}.indeed.com\"\n        self.INDEED_JOB_PAGE_BASE_URL = f\"https://{country}.indeed.com/viewjob?jk=\"\n        self.jobs = []",
         "detail": "modules.scraper",
+        "documentation": {}
+    },
+    {
+        "label": "IndeedSpider",
+        "kind": 6,
+        "importPath": "scrapy_indeed.scrapy_indeed.spiders.indeed_spider",
+        "description": "scrapy_indeed.scrapy_indeed.spiders.indeed_spider",
+        "peekOfCode": "class IndeedSpider(scrapy.Spider):\n    name = 'indeed_spider'\n    allowed_domains = ['indeed.com']\n    custom_settings = {\n        \"DOWNLOAD_DELAY\": 4,  \n        \"CONCURRENT_REQUESTS_PER_DOMAIN\": 1, \n        \"RETRY_TIMES\": 3,  \n        \"ITEM_PIPELINES\": {\n            \"scrapy_theworldwatch.pipelines.UsersPipeline\": 1,\n        },",
+        "detail": "scrapy_indeed.scrapy_indeed.spiders.indeed_spider",
+        "documentation": {}
+    },
+    {
+        "label": "ScrapyIndeedItem",
+        "kind": 6,
+        "importPath": "scrapy_indeed.scrapy_indeed.items",
+        "description": "scrapy_indeed.scrapy_indeed.items",
+        "peekOfCode": "class ScrapyIndeedItem(scrapy.Item):\n    # define the fields for your item here like:\n    # name = scrapy.Field()\n    pass",
+        "detail": "scrapy_indeed.scrapy_indeed.items",
+        "documentation": {}
+    },
+    {
+        "label": "ScrapyIndeedSpiderMiddleware",
+        "kind": 6,
+        "importPath": "scrapy_indeed.scrapy_indeed.middlewares",
+        "description": "scrapy_indeed.scrapy_indeed.middlewares",
+        "peekOfCode": "class ScrapyIndeedSpiderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the spider middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s",
+        "detail": "scrapy_indeed.scrapy_indeed.middlewares",
+        "documentation": {}
+    },
+    {
+        "label": "ScrapyIndeedDownloaderMiddleware",
+        "kind": 6,
+        "importPath": "scrapy_indeed.scrapy_indeed.middlewares",
+        "description": "scrapy_indeed.scrapy_indeed.middlewares",
+        "peekOfCode": "class ScrapyIndeedDownloaderMiddleware:\n    # Not all methods need to be defined. If a method is not defined,\n    # scrapy acts as if the downloader middleware does not modify the\n    # passed objects.\n    @classmethod\n    def from_crawler(cls, crawler):\n        # This method is used by Scrapy to create your spiders.\n        s = cls()\n        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)\n        return s",
+        "detail": "scrapy_indeed.scrapy_indeed.middlewares",
+        "documentation": {}
+    },
+    {
+        "label": "CsvPipeline",
+        "kind": 6,
+        "importPath": "scrapy_indeed.scrapy_indeed.pipelines",
+        "description": "scrapy_indeed.scrapy_indeed.pipelines",
+        "peekOfCode": "class CsvPipeline:\n    def open_spider(self, spider):\n        self.file = open('jobs.csv', 'w', newline='')\n        self.writer = csv.DictWriter(self.file, fieldnames=['title', 'company', 'location', 'date', 'link'])\n        self.writer.writeheader()\n    def close_spider(self, spider):\n        self.file.close()\n    def process_item(self, item, spider):\n        self.writer.writerow(item)\n        return item",
+        "detail": "scrapy_indeed.scrapy_indeed.pipelines",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_NAME",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "BOT_NAME = \"scrapy_indeed\"\nSPIDER_MODULES = [\"scrapy_indeed.spiders\"]\nNEWSPIDER_MODULE = \"scrapy_indeed.spiders\"\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = \"scrapy_indeed (+http://www.yourdomain.com)\"\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SPIDER_MODULES",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "SPIDER_MODULES = [\"scrapy_indeed.spiders\"]\nNEWSPIDER_MODULE = \"scrapy_indeed.spiders\"\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = \"scrapy_indeed (+http://www.yourdomain.com)\"\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "NEWSPIDER_MODULE",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "NEWSPIDER_MODULE = \"scrapy_indeed.spiders\"\n# Crawl responsibly by identifying yourself (and your website) on the user-agent\n#USER_AGENT = \"scrapy_indeed (+http://www.yourdomain.com)\"\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#USER_AGENT",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#USER_AGENT = \"scrapy_indeed (+http://www.yourdomain.com)\"\n# Obey robots.txt rules\nROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROBOTSTXT_OBEY",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "ROBOTSTXT_OBEY = True\n# Configure maximum concurrent requests performed by Scrapy (default: 16)\n#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS = 32\n# Configure a delay for requests for the same website (default: 0)\n# See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay\n# See also autothrottle settings and docs\n#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#DOWNLOAD_DELAY",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#DOWNLOAD_DELAY = 3\n# The download delay setting will honor only one of:\n#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS_PER_DOMAIN",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS_PER_DOMAIN = 16\n#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\n#    \"Accept-Language\": \"en\",",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#CONCURRENT_REQUESTS_PER_IP",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#CONCURRENT_REQUESTS_PER_IP = 16\n# Disable cookies (enabled by default)\n#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\n#    \"Accept-Language\": \"en\",\n#}",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#COOKIES_ENABLED",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#COOKIES_ENABLED = False\n# Disable Telnet Console (enabled by default)\n#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\n#    \"Accept-Language\": \"en\",\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#TELNETCONSOLE_ENABLED",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#TELNETCONSOLE_ENABLED = False\n# Override the default request headers:\n#DEFAULT_REQUEST_HEADERS = {\n#    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\n#    \"Accept-Language\": \"en\",\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    \"scrapy_indeed.middlewares.ScrapyIndeedSpiderMiddleware\": 543,",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#DEFAULT_REQUEST_HEADERS",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#DEFAULT_REQUEST_HEADERS = {\n#    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\n#    \"Accept-Language\": \"en\",\n#}\n# Enable or disable spider middlewares\n# See https://docs.scrapy.org/en/latest/topics/spider-middleware.html\n#SPIDER_MIDDLEWARES = {\n#    \"scrapy_indeed.middlewares.ScrapyIndeedSpiderMiddleware\": 543,\n#}\n# Enable or disable downloader middlewares",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#SPIDER_MIDDLEWARES",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#SPIDER_MIDDLEWARES = {\n#    \"scrapy_indeed.middlewares.ScrapyIndeedSpiderMiddleware\": 543,\n#}\n# Enable or disable downloader middlewares\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html\n#DOWNLOADER_MIDDLEWARES = {\n#    \"scrapy_indeed.middlewares.ScrapyIndeedDownloaderMiddleware\": 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#DOWNLOADER_MIDDLEWARES",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#DOWNLOADER_MIDDLEWARES = {\n#    \"scrapy_indeed.middlewares.ScrapyIndeedDownloaderMiddleware\": 543,\n#}\n# Enable or disable extensions\n# See https://docs.scrapy.org/en/latest/topics/extensions.html\n#EXTENSIONS = {\n#    \"scrapy.extensions.telnet.TelnetConsole\": None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#EXTENSIONS",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#EXTENSIONS = {\n#    \"scrapy.extensions.telnet.TelnetConsole\": None,\n#}\n# Configure item pipelines\n# See https://docs.scrapy.org/en/latest/topics/item-pipeline.html\n#ITEM_PIPELINES = {\n#    \"scrapy_indeed.pipelines.ScrapyIndeedPipeline\": 300,\n#}\n# Enable and configure the AutoThrottle extension (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/autothrottle.html",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#ITEM_PIPELINES",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#ITEM_PIPELINES = {\n#    \"scrapy_indeed.pipelines.ScrapyIndeedPipeline\": 300,\n#}\n# Enable and configure the AutoThrottle extension (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/autothrottle.html\n#AUTOTHROTTLE_ENABLED = True\n# The initial download delay\n#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_ENABLED",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#AUTOTHROTTLE_ENABLED = True\n# The initial download delay\n#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_START_DELAY",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#AUTOTHROTTLE_START_DELAY = 5\n# The maximum download delay to be set in case of high latencies\n#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_MAX_DELAY",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#AUTOTHROTTLE_MAX_DELAY = 60\n# The average number of requests Scrapy should be sending in parallel to\n# each remote server\n#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_TARGET_CONCURRENCY",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0\n# Enable showing throttling stats for every response received:\n#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = \"httpcache\"\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = \"scrapy.extensions.httpcache.FilesystemCacheStorage\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#AUTOTHROTTLE_DEBUG",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#AUTOTHROTTLE_DEBUG = False\n# Enable and configure HTTP caching (disabled by default)\n# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings\n#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = \"httpcache\"\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = \"scrapy.extensions.httpcache.FilesystemCacheStorage\"\n# Set settings whose default value is deprecated to a future-proof value\nREQUEST_FINGERPRINTER_IMPLEMENTATION = \"2.7\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_ENABLED",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#HTTPCACHE_ENABLED = True\n#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = \"httpcache\"\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = \"scrapy.extensions.httpcache.FilesystemCacheStorage\"\n# Set settings whose default value is deprecated to a future-proof value\nREQUEST_FINGERPRINTER_IMPLEMENTATION = \"2.7\"\nTWISTED_REACTOR = \"twisted.internet.asyncioreactor.AsyncioSelectorReactor\"\nFEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_EXPIRATION_SECS",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#HTTPCACHE_EXPIRATION_SECS = 0\n#HTTPCACHE_DIR = \"httpcache\"\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = \"scrapy.extensions.httpcache.FilesystemCacheStorage\"\n# Set settings whose default value is deprecated to a future-proof value\nREQUEST_FINGERPRINTER_IMPLEMENTATION = \"2.7\"\nTWISTED_REACTOR = \"twisted.internet.asyncioreactor.AsyncioSelectorReactor\"\nFEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_DIR",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#HTTPCACHE_DIR = \"httpcache\"\n#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = \"scrapy.extensions.httpcache.FilesystemCacheStorage\"\n# Set settings whose default value is deprecated to a future-proof value\nREQUEST_FINGERPRINTER_IMPLEMENTATION = \"2.7\"\nTWISTED_REACTOR = \"twisted.internet.asyncioreactor.AsyncioSelectorReactor\"\nFEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_IGNORE_HTTP_CODES",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#HTTPCACHE_IGNORE_HTTP_CODES = []\n#HTTPCACHE_STORAGE = \"scrapy.extensions.httpcache.FilesystemCacheStorage\"\n# Set settings whose default value is deprecated to a future-proof value\nREQUEST_FINGERPRINTER_IMPLEMENTATION = \"2.7\"\nTWISTED_REACTOR = \"twisted.internet.asyncioreactor.AsyncioSelectorReactor\"\nFEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "#HTTPCACHE_STORAGE",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "#HTTPCACHE_STORAGE = \"scrapy.extensions.httpcache.FilesystemCacheStorage\"\n# Set settings whose default value is deprecated to a future-proof value\nREQUEST_FINGERPRINTER_IMPLEMENTATION = \"2.7\"\nTWISTED_REACTOR = \"twisted.internet.asyncioreactor.AsyncioSelectorReactor\"\nFEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REQUEST_FINGERPRINTER_IMPLEMENTATION",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "REQUEST_FINGERPRINTER_IMPLEMENTATION = \"2.7\"\nTWISTED_REACTOR = \"twisted.internet.asyncioreactor.AsyncioSelectorReactor\"\nFEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TWISTED_REACTOR",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "TWISTED_REACTOR = \"twisted.internet.asyncioreactor.AsyncioSelectorReactor\"\nFEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "FEED_EXPORT_ENCODING",
+        "kind": 5,
+        "importPath": "scrapy_indeed.scrapy_indeed.settings",
+        "description": "scrapy_indeed.scrapy_indeed.settings",
+        "peekOfCode": "FEED_EXPORT_ENCODING = \"utf-8\"",
+        "detail": "scrapy_indeed.scrapy_indeed.settings",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "venv.bin.jp",
+        "description": "venv.bin.jp",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('expression')\n    parser.add_argument('-f', '--filename',\n                        help=('The filename containing the input data.  '\n                              'If a filename is not given then data is '\n                              'read from stdin.'))\n    parser.add_argument('--ast', action='store_true',\n                        help=('Pretty print the AST, do not search the data.'))\n    args = parser.parse_args()",
+        "detail": "venv.bin.jp",
         "documentation": {}
     },
     {
