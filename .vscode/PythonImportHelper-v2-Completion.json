@@ -826,7 +826,7 @@
         "kind": 6,
         "importPath": "scrapy_indeed.scrapy_indeed.spiders.indeed_spider",
         "description": "scrapy_indeed.scrapy_indeed.spiders.indeed_spider",
-        "peekOfCode": "class IndeedSpider(scrapy.Spider):\n    name = 'indeed_spider'\n    allowed_domains = ['indeed.com']\n    custom_settings = {\n        \"DOWNLOAD_DELAY\": 4,  \n        \"CONCURRENT_REQUESTS_PER_DOMAIN\": 1, \n        \"RETRY_TIMES\": 3,  \n        \"ITEM_PIPELINES\": {\n            \"scrapy_theworldwatch.pipelines.UsersPipeline\": 1,\n        },",
+        "peekOfCode": "class IndeedSpider(scrapy.Spider):\n    name = \"indeed_spider\"\n    allowed_domains = [\"indeed.com\"]\n    custom_settings = {\n        \"DOWNLOAD_DELAY\": 4,\n        \"CONCURRENT_REQUESTS_PER_DOMAIN\": 1,\n        \"RETRY_TIMES\": 3,\n        \"ITEM_PIPELINES\": {\n            \"scrapy_theworldwatch.pipelines.UsersPipeline\": 1,\n        },",
         "detail": "scrapy_indeed.scrapy_indeed.spiders.indeed_spider",
         "documentation": {}
     },
